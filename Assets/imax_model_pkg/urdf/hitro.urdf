@@ -1,0 +1,4188 @@
+<robot name="hitro">
+<link name="base_link">
+<visual>
+<geometry>
+<box size="0.202 0.21 0.065"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.202 0.21 0.065"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.003752416666666667" iyy="0.004027083333333332" izz="0.007075333333333334" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<link name="mb_center1">
+<visual>
+<geometry>
+<cylinder length="0.21" radius="0.0325"/>
+</geometry>
+<origin xyz="0 0 0" rpy="1.57 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 0 0" rpy="1.57 0 0"/>
+<geometry>
+<cylinder length="0.21" radius="0.0325"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.003939062499999999" iyy="0.003939062499999999" izz="0.0005281250000000001" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="0" type="fixed">
+<origin xyz="0.101 0 0" rpy="0 0 0"/>
+<parent link="base_link"/>
+<child link="mb_center1"/>
+</joint>
+<link name="mb_center2">
+<visual>
+<geometry>
+<cylinder length="0.21" radius="0.0325"/>
+</geometry>
+<origin xyz="0 0 0" rpy="1.57 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 0 0" rpy="1.57 0 0"/>
+<geometry>
+<cylinder length="0.21" radius="0.0325"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.003939062499999999" iyy="0.003939062499999999" izz="0.0005281250000000001" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="1" type="fixed">
+<origin xyz="-0.101 0 0" rpy="0 0 0"/>
+<parent link="base_link"/>
+<child link="mb_center2"/>
+</joint>
+<link name="mb_left">
+<visual>
+<geometry>
+<box size="0.202 0.03 0.108"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.202 0.03 0.108"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.004372333333333334" iyy="0.0010469999999999998" izz="0.0034753333333333337" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="2" type="fixed">
+<origin xyz="0 0.12 0" rpy="0 0 0"/>
+<parent link="base_link"/>
+<child link="mb_left"/>
+</joint>
+<link name="mb_right">
+<visual>
+<geometry>
+<box size="0.202 0.03 0.108"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.202 0.03 0.108"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.004372333333333334" iyy="0.0010469999999999998" izz="0.0034753333333333337" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="3" type="fixed">
+<origin xyz="0 -0.12 0" rpy="0 0 0"/>
+<parent link="base_link"/>
+<child link="mb_right"/>
+</joint>
+<link name="mbcy_l_1">
+<visual>
+<geometry>
+<cylinder length="0.03" radius="0.054"/>
+</geometry>
+<origin xyz="0 0 0" rpy="1.57 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 0 0" rpy="1.57 0 0"/>
+<geometry>
+<cylinder length="0.03" radius="0.054"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0008039999999999998" iyy="0.0008039999999999998" izz="0.0014579999999999999" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="4" type="fixed">
+<origin xyz="0.101 0.12 0" rpy="0 0 0"/>
+<parent link="base_link"/>
+<child link="mbcy_l_1"/>
+</joint>
+<link name="mbcy_l_2">
+<visual>
+<geometry>
+<cylinder length="0.03" radius="0.054"/>
+</geometry>
+<origin xyz="0 0 0" rpy="1.57 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 0 0" rpy="1.57 0 0"/>
+<geometry>
+<cylinder length="0.03" radius="0.054"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0008039999999999998" iyy="0.0008039999999999998" izz="0.0014579999999999999" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="5" type="fixed">
+<origin xyz="-0.101 0.12 0" rpy="0 0 0"/>
+<parent link="base_link"/>
+<child link="mbcy_l_2"/>
+</joint>
+<link name="mbcy_r_1">
+<visual>
+<geometry>
+<cylinder length="0.03" radius="0.054"/>
+</geometry>
+<origin xyz="0 0 0" rpy="1.57 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 0 0" rpy="1.57 0 0"/>
+<geometry>
+<cylinder length="0.03" radius="0.054"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0008039999999999998" iyy="0.0008039999999999998" izz="0.0014579999999999999" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="6" type="fixed">
+<origin xyz="0.101 -0.12 0" rpy="0 0 0"/>
+<parent link="base_link"/>
+<child link="mbcy_r_1"/>
+</joint>
+<link name="mbcy_r_2">
+<visual>
+<geometry>
+<cylinder length="0.03" radius="0.054"/>
+</geometry>
+<origin xyz="0 0 0" rpy="1.57 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 0 0" rpy="1.57 0 0"/>
+<geometry>
+<cylinder length="0.03" radius="0.054"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0008039999999999998" iyy="0.0008039999999999998" izz="0.0014579999999999999" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="7" type="fixed">
+<origin xyz="-0.101 -0.12 0" rpy="0 0 0"/>
+<parent link="base_link"/>
+<child link="mbcy_r_2"/>
+</joint>
+<link name="mbliblt_0">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014833333333333335" iyy="0.0014833333333333335" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="8" type="continuous">
+<origin xyz="-0.101 -0.12 0" rpy="0 0 0"/>
+<parent link="base_link"/>
+<child link="mbliblt_0"/>
+<axis xyz="0 -1 0"/>
+</joint>
+<link name="mbliblt1_0">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014833333333333335" iyy="0.0014833333333333335" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="9" type="fixed">
+<origin xyz="0 0 0" rpy="0 4.1887902024 0"/>
+<parent link="mbliblt_0"/>
+<child link="mbliblt1_0"/>
+</joint>
+<link name="mbliblt2_0">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014833333333333335" iyy="0.0014833333333333335" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="10" type="fixed">
+<origin xyz="0 0 0" rpy="0 2.0943951012 0"/>
+<parent link="mbliblt_0"/>
+<child link="mbliblt2_0"/>
+</joint>
+<link name="mbliblo_0">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014833333333333335" iyy="0.0014833333333333335" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="11" type="continuous">
+<origin xyz="-0.07214285714285715 -0.12 0" rpy="0 0.5235987753 0"/>
+<parent link="base_link"/>
+<child link="mbliblo_0"/>
+<axis xyz="0 -1 0"/>
+</joint>
+<link name="mbliblo1_0">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014833333333333335" iyy="0.0014833333333333335" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="12" type="fixed">
+<origin xyz="0 0 0" rpy="0 4.1887902024 0"/>
+<parent link="mbliblo_0"/>
+<child link="mbliblo1_0"/>
+</joint>
+<link name="mbliblo2_0">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014833333333333335" iyy="0.0014833333333333335" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="13" type="fixed">
+<origin xyz="0 0 0" rpy="0 2.0943951012 0"/>
+<parent link="mbliblo_0"/>
+<child link="mbliblo2_0"/>
+</joint>
+<link name="mbliblt_2">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014833333333333335" iyy="0.0014833333333333335" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="14" type="continuous">
+<origin xyz="-0.04328571428571429 -0.12 0" rpy="0 0 0"/>
+<parent link="base_link"/>
+<child link="mbliblt_2"/>
+<axis xyz="0 -1 0"/>
+</joint>
+<link name="mbliblt1_2">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014833333333333335" iyy="0.0014833333333333335" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="15" type="fixed">
+<origin xyz="0 0 0" rpy="0 4.1887902024 0"/>
+<parent link="mbliblt_2"/>
+<child link="mbliblt1_2"/>
+</joint>
+<link name="mbliblt2_2">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014833333333333335" iyy="0.0014833333333333335" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="16" type="fixed">
+<origin xyz="0 0 0" rpy="0 2.0943951012 0"/>
+<parent link="mbliblt_2"/>
+<child link="mbliblt2_2"/>
+</joint>
+<link name="mbliblo_2">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014833333333333335" iyy="0.0014833333333333335" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="17" type="continuous">
+<origin xyz="-0.01442857142857143 -0.12 0" rpy="0 0.5235987753 0"/>
+<parent link="base_link"/>
+<child link="mbliblo_2"/>
+<axis xyz="0 -1 0"/>
+</joint>
+<link name="mbliblo1_2">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014833333333333335" iyy="0.0014833333333333335" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="18" type="fixed">
+<origin xyz="0 0 0" rpy="0 4.1887902024 0"/>
+<parent link="mbliblo_2"/>
+<child link="mbliblo1_2"/>
+</joint>
+<link name="mbliblo2_2">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014833333333333335" iyy="0.0014833333333333335" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="19" type="fixed">
+<origin xyz="0 0 0" rpy="0 2.0943951012 0"/>
+<parent link="mbliblo_2"/>
+<child link="mbliblo2_2"/>
+</joint>
+<link name="mbliblt_4">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014833333333333335" iyy="0.0014833333333333335" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="20" type="continuous">
+<origin xyz="0.01442857142857143 -0.12 0" rpy="0 0 0"/>
+<parent link="base_link"/>
+<child link="mbliblt_4"/>
+<axis xyz="0 -1 0"/>
+</joint>
+<link name="mbliblt1_4">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014833333333333335" iyy="0.0014833333333333335" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="21" type="fixed">
+<origin xyz="0 0 0" rpy="0 4.1887902024 0"/>
+<parent link="mbliblt_4"/>
+<child link="mbliblt1_4"/>
+</joint>
+<link name="mbliblt2_4">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014833333333333335" iyy="0.0014833333333333335" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="22" type="fixed">
+<origin xyz="0 0 0" rpy="0 2.0943951012 0"/>
+<parent link="mbliblt_4"/>
+<child link="mbliblt2_4"/>
+</joint>
+<link name="mbliblo_4">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014833333333333335" iyy="0.0014833333333333335" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="23" type="continuous">
+<origin xyz="0.04328571428571429 -0.12 0" rpy="0 0.5235987753 0"/>
+<parent link="base_link"/>
+<child link="mbliblo_4"/>
+<axis xyz="0 -1 0"/>
+</joint>
+<link name="mbliblo1_4">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014833333333333335" iyy="0.0014833333333333335" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="24" type="fixed">
+<origin xyz="0 0 0" rpy="0 4.1887902024 0"/>
+<parent link="mbliblo_4"/>
+<child link="mbliblo1_4"/>
+</joint>
+<link name="mbliblo2_4">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014833333333333335" iyy="0.0014833333333333335" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="25" type="fixed">
+<origin xyz="0 0 0" rpy="0 2.0943951012 0"/>
+<parent link="mbliblo_4"/>
+<child link="mbliblo2_4"/>
+</joint>
+<link name="mbliblt_6">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014833333333333335" iyy="0.0014833333333333335" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="26" type="continuous">
+<origin xyz="0.07214285714285715 -0.12 0" rpy="0 0 0"/>
+<parent link="base_link"/>
+<child link="mbliblt_6"/>
+<axis xyz="0 -1 0"/>
+</joint>
+<link name="mbliblt1_6">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014833333333333335" iyy="0.0014833333333333335" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="27" type="fixed">
+<origin xyz="0 0 0" rpy="0 4.1887902024 0"/>
+<parent link="mbliblt_6"/>
+<child link="mbliblt1_6"/>
+</joint>
+<link name="mbliblt2_6">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014833333333333335" iyy="0.0014833333333333335" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="28" type="fixed">
+<origin xyz="0 0 0" rpy="0 2.0943951012 0"/>
+<parent link="mbliblt_6"/>
+<child link="mbliblt2_6"/>
+</joint>
+<link name="mbliblo_6">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014833333333333335" iyy="0.0014833333333333335" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="29" type="continuous">
+<origin xyz="0.101 -0.12 0" rpy="0 0.5235987753 0"/>
+<parent link="base_link"/>
+<child link="mbliblo_6"/>
+<axis xyz="0 -1 0"/>
+</joint>
+<link name="mbliblo1_6">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014833333333333335" iyy="0.0014833333333333335" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="30" type="fixed">
+<origin xyz="0 0 0" rpy="0 4.1887902024 0"/>
+<parent link="mbliblo_6"/>
+<child link="mbliblo1_6"/>
+</joint>
+<link name="mbliblo2_6">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014833333333333335" iyy="0.0014833333333333335" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="31" type="fixed">
+<origin xyz="0 0 0" rpy="0 2.0943951012 0"/>
+<parent link="mbliblo_6"/>
+<child link="mbliblo2_6"/>
+</joint>
+<link name="mblibrt_0">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014833333333333335" iyy="0.0014833333333333335" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="32" type="continuous">
+<origin xyz="-0.101 0.12 0" rpy="0 0 0"/>
+<parent link="base_link"/>
+<child link="mblibrt_0"/>
+<axis xyz="0 1 0"/>
+</joint>
+<link name="mblibrt1_0">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014833333333333335" iyy="0.0014833333333333335" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="33" type="fixed">
+<origin xyz="0 0 0" rpy="0 4.1887902024 0"/>
+<parent link="mblibrt_0"/>
+<child link="mblibrt1_0"/>
+</joint>
+<link name="mblibrt2_0">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014833333333333335" iyy="0.0014833333333333335" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="34" type="fixed">
+<origin xyz="0 0 0" rpy="0 2.0943951012 0"/>
+<parent link="mblibrt_0"/>
+<child link="mblibrt2_0"/>
+</joint>
+<link name="mblibro_0">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014833333333333335" iyy="0.0014833333333333335" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="35" type="continuous">
+<origin xyz="-0.07214285714285715 0.12 0" rpy="0 0.5235987753 0"/>
+<parent link="base_link"/>
+<child link="mblibro_0"/>
+<axis xyz="0 1 0"/>
+</joint>
+<link name="mblibro1_0">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014833333333333335" iyy="0.0014833333333333335" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="36" type="fixed">
+<origin xyz="0 0 0" rpy="0 4.1887902024 0"/>
+<parent link="mblibro_0"/>
+<child link="mblibro1_0"/>
+</joint>
+<link name="mblibro2_0">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014833333333333335" iyy="0.0014833333333333335" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="37" type="fixed">
+<origin xyz="0 0 0" rpy="0 2.0943951012 0"/>
+<parent link="mblibro_0"/>
+<child link="mblibro2_0"/>
+</joint>
+<link name="mblibrt_2">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014833333333333335" iyy="0.0014833333333333335" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="38" type="continuous">
+<origin xyz="-0.04328571428571429 0.12 0" rpy="0 0 0"/>
+<parent link="base_link"/>
+<child link="mblibrt_2"/>
+<axis xyz="0 1 0"/>
+</joint>
+<link name="mblibrt1_2">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014833333333333335" iyy="0.0014833333333333335" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="39" type="fixed">
+<origin xyz="0 0 0" rpy="0 4.1887902024 0"/>
+<parent link="mblibrt_2"/>
+<child link="mblibrt1_2"/>
+</joint>
+<link name="mblibrt2_2">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014833333333333335" iyy="0.0014833333333333335" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="40" type="fixed">
+<origin xyz="0 0 0" rpy="0 2.0943951012 0"/>
+<parent link="mblibrt_2"/>
+<child link="mblibrt2_2"/>
+</joint>
+<link name="mblibro_2">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014833333333333335" iyy="0.0014833333333333335" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="41" type="continuous">
+<origin xyz="-0.01442857142857143 0.12 0" rpy="0 0.5235987753 0"/>
+<parent link="base_link"/>
+<child link="mblibro_2"/>
+<axis xyz="0 1 0"/>
+</joint>
+<link name="mblibro1_2">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014833333333333335" iyy="0.0014833333333333335" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="42" type="fixed">
+<origin xyz="0 0 0" rpy="0 4.1887902024 0"/>
+<parent link="mblibro_2"/>
+<child link="mblibro1_2"/>
+</joint>
+<link name="mblibro2_2">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014833333333333335" iyy="0.0014833333333333335" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="43" type="fixed">
+<origin xyz="0 0 0" rpy="0 2.0943951012 0"/>
+<parent link="mblibro_2"/>
+<child link="mblibro2_2"/>
+</joint>
+<link name="mblibrt_4">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014833333333333335" iyy="0.0014833333333333335" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="44" type="continuous">
+<origin xyz="0.01442857142857143 0.12 0" rpy="0 0 0"/>
+<parent link="base_link"/>
+<child link="mblibrt_4"/>
+<axis xyz="0 1 0"/>
+</joint>
+<link name="mblibrt1_4">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014833333333333335" iyy="0.0014833333333333335" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="45" type="fixed">
+<origin xyz="0 0 0" rpy="0 4.1887902024 0"/>
+<parent link="mblibrt_4"/>
+<child link="mblibrt1_4"/>
+</joint>
+<link name="mblibrt2_4">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014833333333333335" iyy="0.0014833333333333335" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="46" type="fixed">
+<origin xyz="0 0 0" rpy="0 2.0943951012 0"/>
+<parent link="mblibrt_4"/>
+<child link="mblibrt2_4"/>
+</joint>
+<link name="mblibro_4">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014833333333333335" iyy="0.0014833333333333335" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="47" type="continuous">
+<origin xyz="0.04328571428571429 0.12 0" rpy="0 0.5235987753 0"/>
+<parent link="base_link"/>
+<child link="mblibro_4"/>
+<axis xyz="0 1 0"/>
+</joint>
+<link name="mblibro1_4">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014833333333333335" iyy="0.0014833333333333335" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="48" type="fixed">
+<origin xyz="0 0 0" rpy="0 4.1887902024 0"/>
+<parent link="mblibro_4"/>
+<child link="mblibro1_4"/>
+</joint>
+<link name="mblibro2_4">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014833333333333335" iyy="0.0014833333333333335" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="49" type="fixed">
+<origin xyz="0 0 0" rpy="0 2.0943951012 0"/>
+<parent link="mblibro_4"/>
+<child link="mblibro2_4"/>
+</joint>
+<link name="mblibrt_6">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014833333333333335" iyy="0.0014833333333333335" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="50" type="continuous">
+<origin xyz="0.07214285714285715 0.12 0" rpy="0 0 0"/>
+<parent link="base_link"/>
+<child link="mblibrt_6"/>
+<axis xyz="0 1 0"/>
+</joint>
+<link name="mblibrt1_6">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014833333333333335" iyy="0.0014833333333333335" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="51" type="fixed">
+<origin xyz="0 0 0" rpy="0 4.1887902024 0"/>
+<parent link="mblibrt_6"/>
+<child link="mblibrt1_6"/>
+</joint>
+<link name="mblibrt2_6">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014833333333333335" iyy="0.0014833333333333335" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="52" type="fixed">
+<origin xyz="0 0 0" rpy="0 2.0943951012 0"/>
+<parent link="mblibrt_6"/>
+<child link="mblibrt2_6"/>
+</joint>
+<link name="mblibro_6">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014833333333333335" iyy="0.0014833333333333335" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="53" type="continuous">
+<origin xyz="0.101 0.12 0" rpy="0 0.5235987753 0"/>
+<parent link="base_link"/>
+<child link="mblibro_6"/>
+<axis xyz="0 1 0"/>
+</joint>
+<link name="mblibro1_6">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014833333333333335" iyy="0.0014833333333333335" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="54" type="fixed">
+<origin xyz="0 0 0" rpy="0 4.1887902024 0"/>
+<parent link="mblibro_6"/>
+<child link="mblibro1_6"/>
+</joint>
+<link name="mblibro2_6">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.13"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014833333333333335" iyy="0.0014833333333333335" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="55" type="fixed">
+<origin xyz="0 0 0" rpy="0 2.0943951012 0"/>
+<parent link="mblibro_6"/>
+<child link="mblibro2_6"/>
+</joint>
+<link name="fl">
+<visual>
+<geometry>
+<cylinder length="0.03" radius="0.053"/>
+</geometry>
+<origin xyz="0 0 0" rpy="1.57 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 0 0" rpy="1.57 0 0"/>
+<geometry>
+<cylinder length="0.03" radius="0.053"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.00077725" iyy="0.00077725" izz="0.0014045" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="56" type="continuous">
+<origin xyz="-0.101 -0.154 0" rpy="0 0 0"/>
+<parent link="base_link"/>
+<child link="fl"/>
+<axis xyz="0 -1 0"/>
+</joint>
+<link name="fl_box">
+<visual>
+<geometry>
+<box size="0.106 0.03 0.202"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.106 0.03 0.202"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.004336666666666667" iyy="0.0034753333333333337" izz="0.0010113333333333333" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="57" type="fixed">
+<origin xyz="0 0 0.101" rpy="0 0 0"/>
+<parent link="fl"/>
+<child link="fl_box"/>
+</joint>
+<link name="fl_cylinder">
+<visual>
+<geometry>
+<cylinder length="0.03" radius="0.053"/>
+</geometry>
+<origin xyz="0 0 0" rpy="1.57 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 0 0" rpy="1.57 0 0"/>
+<geometry>
+<cylinder length="0.03" radius="0.053"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.00077725" iyy="0.00077725" izz="0.0014045" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="58" type="fixed">
+<origin xyz="0 0 0.202" rpy="0 0 0"/>
+<parent link="fl"/>
+<child link="fl_cylinder"/>
+</joint>
+<link name="fllibt_0">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="59" type="continuous">
+<origin xyz="0 0 0.0" rpy="0 0 0"/>
+<parent link="fl"/>
+<child link="fllibt_0"/>
+<axis xyz="0 -1 0"/>
+</joint>
+<link name="flliblt1_0">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="60" type="fixed">
+<origin xyz="0 0 0" rpy="0 4.1887902024 0"/>
+<parent link="fllibt_0"/>
+<child link="flliblt1_0"/>
+</joint>
+<link name="flliblt2_0">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="61" type="fixed">
+<origin xyz="0 0 0" rpy="0 2.0943951012 0"/>
+<parent link="fllibt_0"/>
+<child link="flliblt2_0"/>
+</joint>
+<link name="flliblo_0">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="62" type="continuous">
+<origin xyz="0 0 0.02885714285714286" rpy="0 0.5235987753 0"/>
+<parent link="fl"/>
+<child link="flliblo_0"/>
+<axis xyz="0 -1 0"/>
+</joint>
+<link name="flliblo1_0">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="63" type="fixed">
+<origin xyz="0 0 0" rpy="0 4.1887902024 0"/>
+<parent link="flliblo_0"/>
+<child link="flliblo1_0"/>
+</joint>
+<link name="flliblo2_0">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="64" type="fixed">
+<origin xyz="0 0 0" rpy="0 2.0943951012 0"/>
+<parent link="flliblo_0"/>
+<child link="flliblo2_0"/>
+</joint>
+<link name="fllibt_2">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="65" type="continuous">
+<origin xyz="0 0 0.05771428571428572" rpy="0 0 0"/>
+<parent link="fl"/>
+<child link="fllibt_2"/>
+<axis xyz="0 -1 0"/>
+</joint>
+<link name="flliblt1_2">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="66" type="fixed">
+<origin xyz="0 0 0" rpy="0 4.1887902024 0"/>
+<parent link="fllibt_2"/>
+<child link="flliblt1_2"/>
+</joint>
+<link name="flliblt2_2">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="67" type="fixed">
+<origin xyz="0 0 0" rpy="0 2.0943951012 0"/>
+<parent link="fllibt_2"/>
+<child link="flliblt2_2"/>
+</joint>
+<link name="flliblo_2">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="68" type="continuous">
+<origin xyz="0 0 0.08657142857142858" rpy="0 0.5235987753 0"/>
+<parent link="fl"/>
+<child link="flliblo_2"/>
+<axis xyz="0 -1 0"/>
+</joint>
+<link name="flliblo1_2">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="69" type="fixed">
+<origin xyz="0 0 0" rpy="0 4.1887902024 0"/>
+<parent link="flliblo_2"/>
+<child link="flliblo1_2"/>
+</joint>
+<link name="flliblo2_2">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="70" type="fixed">
+<origin xyz="0 0 0" rpy="0 2.0943951012 0"/>
+<parent link="flliblo_2"/>
+<child link="flliblo2_2"/>
+</joint>
+<link name="fllibt_4">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="71" type="continuous">
+<origin xyz="0 0 0.11542857142857144" rpy="0 0 0"/>
+<parent link="fl"/>
+<child link="fllibt_4"/>
+<axis xyz="0 -1 0"/>
+</joint>
+<link name="flliblt1_4">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="72" type="fixed">
+<origin xyz="0 0 0" rpy="0 4.1887902024 0"/>
+<parent link="fllibt_4"/>
+<child link="flliblt1_4"/>
+</joint>
+<link name="flliblt2_4">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="73" type="fixed">
+<origin xyz="0 0 0" rpy="0 2.0943951012 0"/>
+<parent link="fllibt_4"/>
+<child link="flliblt2_4"/>
+</joint>
+<link name="flliblo_4">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="74" type="continuous">
+<origin xyz="0 0 0.1442857142857143" rpy="0 0.5235987753 0"/>
+<parent link="fl"/>
+<child link="flliblo_4"/>
+<axis xyz="0 -1 0"/>
+</joint>
+<link name="flliblo1_4">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="75" type="fixed">
+<origin xyz="0 0 0" rpy="0 4.1887902024 0"/>
+<parent link="flliblo_4"/>
+<child link="flliblo1_4"/>
+</joint>
+<link name="flliblo2_4">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="76" type="fixed">
+<origin xyz="0 0 0" rpy="0 2.0943951012 0"/>
+<parent link="flliblo_4"/>
+<child link="flliblo2_4"/>
+</joint>
+<link name="fllibt_6">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="77" type="continuous">
+<origin xyz="0 0 0.17314285714285715" rpy="0 0 0"/>
+<parent link="fl"/>
+<child link="fllibt_6"/>
+<axis xyz="0 -1 0"/>
+</joint>
+<link name="flliblt1_6">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="78" type="fixed">
+<origin xyz="0 0 0" rpy="0 4.1887902024 0"/>
+<parent link="fllibt_6"/>
+<child link="flliblt1_6"/>
+</joint>
+<link name="flliblt2_6">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="79" type="fixed">
+<origin xyz="0 0 0" rpy="0 2.0943951012 0"/>
+<parent link="fllibt_6"/>
+<child link="flliblt2_6"/>
+</joint>
+<link name="flliblo_6">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="80" type="continuous">
+<origin xyz="0 0 0.202" rpy="0 0.5235987753 0"/>
+<parent link="fl"/>
+<child link="flliblo_6"/>
+<axis xyz="0 -1 0"/>
+</joint>
+<link name="flliblo1_6">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="81" type="fixed">
+<origin xyz="0 0 0" rpy="0 4.1887902024 0"/>
+<parent link="flliblo_6"/>
+<child link="flliblo1_6"/>
+</joint>
+<link name="flliblo2_6">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="82" type="fixed">
+<origin xyz="0 0 0" rpy="0 2.0943951012 0"/>
+<parent link="flliblo_6"/>
+<child link="flliblo2_6"/>
+</joint>
+<link name="fr">
+<visual>
+<geometry>
+<cylinder length="0.03" radius="0.053"/>
+</geometry>
+<origin xyz="0 0 0" rpy="1.57 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 0 0" rpy="1.57 0 0"/>
+<geometry>
+<cylinder length="0.03" radius="0.053"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.00077725" iyy="0.00077725" izz="0.0014045" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="83" type="continuous">
+<origin xyz="-0.101 0.154 0" rpy="0 0 0"/>
+<parent link="base_link"/>
+<child link="fr"/>
+<axis xyz="0 1 0"/>
+</joint>
+<link name="fr_box">
+<visual>
+<geometry>
+<box size="0.106 0.03 0.202"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.106 0.03 0.202"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.004336666666666667" iyy="0.0034753333333333337" izz="0.0010113333333333333" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="84" type="fixed">
+<origin xyz="0 0 0.101" rpy="0 0 0"/>
+<parent link="fr"/>
+<child link="fr_box"/>
+</joint>
+<link name="fr_cylinder">
+<visual>
+<geometry>
+<cylinder length="0.03" radius="0.053"/>
+</geometry>
+<origin xyz="0 0 0" rpy="1.57 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 0 0" rpy="1.57 0 0"/>
+<geometry>
+<cylinder length="0.03" radius="0.053"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.00077725" iyy="0.00077725" izz="0.0014045" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="85" type="fixed">
+<origin xyz="0 0 0.202" rpy="0 0 0"/>
+<parent link="fr"/>
+<child link="fr_cylinder"/>
+</joint>
+<link name="frlibt_0">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="86" type="continuous">
+<origin xyz="0 0 0.0" rpy="0 0 0"/>
+<parent link="fr"/>
+<child link="frlibt_0"/>
+<axis xyz="0 1 0"/>
+</joint>
+<link name="frliblt1_0">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="87" type="fixed">
+<origin xyz="0 0 0" rpy="0 4.1887902024 0"/>
+<parent link="frlibt_0"/>
+<child link="frliblt1_0"/>
+</joint>
+<link name="frliblt2_0">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="88" type="fixed">
+<origin xyz="0 0 0" rpy="0 2.0943951012 0"/>
+<parent link="frlibt_0"/>
+<child link="frliblt2_0"/>
+</joint>
+<link name="frliblo_0">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="89" type="continuous">
+<origin xyz="0 0 0.02885714285714286" rpy="0 0.5235987753 0"/>
+<parent link="fr"/>
+<child link="frliblo_0"/>
+<axis xyz="0 1 0"/>
+</joint>
+<link name="frliblo1_0">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="90" type="fixed">
+<origin xyz="0 0 0" rpy="0 4.1887902024 0"/>
+<parent link="frliblo_0"/>
+<child link="frliblo1_0"/>
+</joint>
+<link name="frliblo2_0">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="91" type="fixed">
+<origin xyz="0 0 0" rpy="0 2.0943951012 0"/>
+<parent link="frliblo_0"/>
+<child link="frliblo2_0"/>
+</joint>
+<link name="frlibt_2">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="92" type="continuous">
+<origin xyz="0 0 0.05771428571428572" rpy="0 0 0"/>
+<parent link="fr"/>
+<child link="frlibt_2"/>
+<axis xyz="0 1 0"/>
+</joint>
+<link name="frliblt1_2">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="93" type="fixed">
+<origin xyz="0 0 0" rpy="0 4.1887902024 0"/>
+<parent link="frlibt_2"/>
+<child link="frliblt1_2"/>
+</joint>
+<link name="frliblt2_2">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="94" type="fixed">
+<origin xyz="0 0 0" rpy="0 2.0943951012 0"/>
+<parent link="frlibt_2"/>
+<child link="frliblt2_2"/>
+</joint>
+<link name="frliblo_2">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="95" type="continuous">
+<origin xyz="0 0 0.08657142857142858" rpy="0 0.5235987753 0"/>
+<parent link="fr"/>
+<child link="frliblo_2"/>
+<axis xyz="0 1 0"/>
+</joint>
+<link name="frliblo1_2">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="96" type="fixed">
+<origin xyz="0 0 0" rpy="0 4.1887902024 0"/>
+<parent link="frliblo_2"/>
+<child link="frliblo1_2"/>
+</joint>
+<link name="frliblo2_2">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="97" type="fixed">
+<origin xyz="0 0 0" rpy="0 2.0943951012 0"/>
+<parent link="frliblo_2"/>
+<child link="frliblo2_2"/>
+</joint>
+<link name="frlibt_4">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="98" type="continuous">
+<origin xyz="0 0 0.11542857142857144" rpy="0 0 0"/>
+<parent link="fr"/>
+<child link="frlibt_4"/>
+<axis xyz="0 1 0"/>
+</joint>
+<link name="frliblt1_4">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="99" type="fixed">
+<origin xyz="0 0 0" rpy="0 4.1887902024 0"/>
+<parent link="frlibt_4"/>
+<child link="frliblt1_4"/>
+</joint>
+<link name="frliblt2_4">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="100" type="fixed">
+<origin xyz="0 0 0" rpy="0 2.0943951012 0"/>
+<parent link="frlibt_4"/>
+<child link="frliblt2_4"/>
+</joint>
+<link name="frliblo_4">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="101" type="continuous">
+<origin xyz="0 0 0.1442857142857143" rpy="0 0.5235987753 0"/>
+<parent link="fr"/>
+<child link="frliblo_4"/>
+<axis xyz="0 1 0"/>
+</joint>
+<link name="frliblo1_4">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="102" type="fixed">
+<origin xyz="0 0 0" rpy="0 4.1887902024 0"/>
+<parent link="frliblo_4"/>
+<child link="frliblo1_4"/>
+</joint>
+<link name="frliblo2_4">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="103" type="fixed">
+<origin xyz="0 0 0" rpy="0 2.0943951012 0"/>
+<parent link="frliblo_4"/>
+<child link="frliblo2_4"/>
+</joint>
+<link name="frlibt_6">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="104" type="continuous">
+<origin xyz="0 0 0.17314285714285715" rpy="0 0 0"/>
+<parent link="fr"/>
+<child link="frlibt_6"/>
+<axis xyz="0 1 0"/>
+</joint>
+<link name="frliblt1_6">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="105" type="fixed">
+<origin xyz="0 0 0" rpy="0 4.1887902024 0"/>
+<parent link="frlibt_6"/>
+<child link="frliblt1_6"/>
+</joint>
+<link name="frliblt2_6">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="106" type="fixed">
+<origin xyz="0 0 0" rpy="0 2.0943951012 0"/>
+<parent link="frlibt_6"/>
+<child link="frliblt2_6"/>
+</joint>
+<link name="frliblo_6">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="107" type="continuous">
+<origin xyz="0 0 0.202" rpy="0 0.5235987753 0"/>
+<parent link="fr"/>
+<child link="frliblo_6"/>
+<axis xyz="0 1 0"/>
+</joint>
+<link name="frliblo1_6">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="108" type="fixed">
+<origin xyz="0 0 0" rpy="0 4.1887902024 0"/>
+<parent link="frliblo_6"/>
+<child link="frliblo1_6"/>
+</joint>
+<link name="frliblo2_6">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="109" type="fixed">
+<origin xyz="0 0 0" rpy="0 2.0943951012 0"/>
+<parent link="frliblo_6"/>
+<child link="frliblo2_6"/>
+</joint>
+<link name="rl">
+<visual>
+<geometry>
+<cylinder length="0.03" radius="0.053"/>
+</geometry>
+<origin xyz="0 0 0" rpy="1.57 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 0 0" rpy="1.57 0 0"/>
+<geometry>
+<cylinder length="0.03" radius="0.053"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.00077725" iyy="0.00077725" izz="0.0014045" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="110" type="continuous">
+<origin xyz="0.101 -0.154 0" rpy="0 0 0"/>
+<parent link="base_link"/>
+<child link="rl"/>
+<axis xyz="0 -1 0"/>
+</joint>
+<link name="rl_box">
+<visual>
+<geometry>
+<box size="0.106 0.03 0.202"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.106 0.03 0.202"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.004336666666666667" iyy="0.0034753333333333337" izz="0.0010113333333333333" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="111" type="fixed">
+<origin xyz="0 0 0.101" rpy="0 0 0"/>
+<parent link="rl"/>
+<child link="rl_box"/>
+</joint>
+<link name="rl_cylinder">
+<visual>
+<geometry>
+<cylinder length="0.03" radius="0.053"/>
+</geometry>
+<origin xyz="0 0 0" rpy="1.57 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 0 0" rpy="1.57 0 0"/>
+<geometry>
+<cylinder length="0.03" radius="0.053"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.00077725" iyy="0.00077725" izz="0.0014045" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="112" type="fixed">
+<origin xyz="0 0 0.202" rpy="0 0 0"/>
+<parent link="rl"/>
+<child link="rl_cylinder"/>
+</joint>
+<link name="rllibt_0">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="113" type="continuous">
+<origin xyz="0 0 0.0" rpy="0 0 0"/>
+<parent link="rl"/>
+<child link="rllibt_0"/>
+<axis xyz="0 -1 0"/>
+</joint>
+<link name="rlliblt1_0">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="114" type="fixed">
+<origin xyz="0 0 0" rpy="0 4.1887902024 0"/>
+<parent link="rllibt_0"/>
+<child link="rlliblt1_0"/>
+</joint>
+<link name="rlliblt2_0">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="115" type="fixed">
+<origin xyz="0 0 0" rpy="0 2.0943951012 0"/>
+<parent link="rllibt_0"/>
+<child link="rlliblt2_0"/>
+</joint>
+<link name="rlliblo_0">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="116" type="continuous">
+<origin xyz="0 0 0.02885714285714286" rpy="0 0.5235987753 0"/>
+<parent link="rl"/>
+<child link="rlliblo_0"/>
+<axis xyz="0 -1 0"/>
+</joint>
+<link name="rlliblo1_0">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="117" type="fixed">
+<origin xyz="0 0 0" rpy="0 4.1887902024 0"/>
+<parent link="rlliblo_0"/>
+<child link="rlliblo1_0"/>
+</joint>
+<link name="rlliblo2_0">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="118" type="fixed">
+<origin xyz="0 0 0" rpy="0 2.0943951012 0"/>
+<parent link="rlliblo_0"/>
+<child link="rlliblo2_0"/>
+</joint>
+<link name="rllibt_2">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="119" type="continuous">
+<origin xyz="0 0 0.05771428571428572" rpy="0 0 0"/>
+<parent link="rl"/>
+<child link="rllibt_2"/>
+<axis xyz="0 -1 0"/>
+</joint>
+<link name="rlliblt1_2">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="120" type="fixed">
+<origin xyz="0 0 0" rpy="0 4.1887902024 0"/>
+<parent link="rllibt_2"/>
+<child link="rlliblt1_2"/>
+</joint>
+<link name="rlliblt2_2">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="121" type="fixed">
+<origin xyz="0 0 0" rpy="0 2.0943951012 0"/>
+<parent link="rllibt_2"/>
+<child link="rlliblt2_2"/>
+</joint>
+<link name="rlliblo_2">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="122" type="continuous">
+<origin xyz="0 0 0.08657142857142858" rpy="0 0.5235987753 0"/>
+<parent link="rl"/>
+<child link="rlliblo_2"/>
+<axis xyz="0 -1 0"/>
+</joint>
+<link name="rlliblo1_2">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="123" type="fixed">
+<origin xyz="0 0 0" rpy="0 4.1887902024 0"/>
+<parent link="rlliblo_2"/>
+<child link="rlliblo1_2"/>
+</joint>
+<link name="rlliblo2_2">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="124" type="fixed">
+<origin xyz="0 0 0" rpy="0 2.0943951012 0"/>
+<parent link="rlliblo_2"/>
+<child link="rlliblo2_2"/>
+</joint>
+<link name="rllibt_4">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="125" type="continuous">
+<origin xyz="0 0 0.11542857142857144" rpy="0 0 0"/>
+<parent link="rl"/>
+<child link="rllibt_4"/>
+<axis xyz="0 -1 0"/>
+</joint>
+<link name="rlliblt1_4">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="126" type="fixed">
+<origin xyz="0 0 0" rpy="0 4.1887902024 0"/>
+<parent link="rllibt_4"/>
+<child link="rlliblt1_4"/>
+</joint>
+<link name="rlliblt2_4">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="127" type="fixed">
+<origin xyz="0 0 0" rpy="0 2.0943951012 0"/>
+<parent link="rllibt_4"/>
+<child link="rlliblt2_4"/>
+</joint>
+<link name="rlliblo_4">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="128" type="continuous">
+<origin xyz="0 0 0.1442857142857143" rpy="0 0.5235987753 0"/>
+<parent link="rl"/>
+<child link="rlliblo_4"/>
+<axis xyz="0 -1 0"/>
+</joint>
+<link name="rlliblo1_4">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="129" type="fixed">
+<origin xyz="0 0 0" rpy="0 4.1887902024 0"/>
+<parent link="rlliblo_4"/>
+<child link="rlliblo1_4"/>
+</joint>
+<link name="rlliblo2_4">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="130" type="fixed">
+<origin xyz="0 0 0" rpy="0 2.0943951012 0"/>
+<parent link="rlliblo_4"/>
+<child link="rlliblo2_4"/>
+</joint>
+<link name="rllibt_6">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="131" type="continuous">
+<origin xyz="0 0 0.17314285714285715" rpy="0 0 0"/>
+<parent link="rl"/>
+<child link="rllibt_6"/>
+<axis xyz="0 -1 0"/>
+</joint>
+<link name="rlliblt1_6">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="132" type="fixed">
+<origin xyz="0 0 0" rpy="0 4.1887902024 0"/>
+<parent link="rllibt_6"/>
+<child link="rlliblt1_6"/>
+</joint>
+<link name="rlliblt2_6">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="133" type="fixed">
+<origin xyz="0 0 0" rpy="0 2.0943951012 0"/>
+<parent link="rllibt_6"/>
+<child link="rlliblt2_6"/>
+</joint>
+<link name="rlliblo_6">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="134" type="continuous">
+<origin xyz="0 0 0.202" rpy="0 0.5235987753 0"/>
+<parent link="rl"/>
+<child link="rlliblo_6"/>
+<axis xyz="0 -1 0"/>
+</joint>
+<link name="rlliblo1_6">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="135" type="fixed">
+<origin xyz="0 0 0" rpy="0 4.1887902024 0"/>
+<parent link="rlliblo_6"/>
+<child link="rlliblo1_6"/>
+</joint>
+<link name="rlliblo2_6">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="136" type="fixed">
+<origin xyz="0 0 0" rpy="0 2.0943951012 0"/>
+<parent link="rlliblo_6"/>
+<child link="rlliblo2_6"/>
+</joint>
+<link name="rr">
+<visual>
+<geometry>
+<cylinder length="0.03" radius="0.053"/>
+</geometry>
+<origin xyz="0 0 0" rpy="1.57 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 0 0" rpy="1.57 0 0"/>
+<geometry>
+<cylinder length="0.03" radius="0.053"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.00077725" iyy="0.00077725" izz="0.0014045" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="137" type="continuous">
+<origin xyz="0.101 0.154 0" rpy="0 0 0"/>
+<parent link="base_link"/>
+<child link="rr"/>
+<axis xyz="0 1 0"/>
+</joint>
+<link name="rr_box">
+<visual>
+<geometry>
+<box size="0.106 0.03 0.202"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.106 0.03 0.202"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.004336666666666667" iyy="0.0034753333333333337" izz="0.0010113333333333333" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="138" type="fixed">
+<origin xyz="0 0 0.101" rpy="0 0 0"/>
+<parent link="rr"/>
+<child link="rr_box"/>
+</joint>
+<link name="rr_cylinder">
+<visual>
+<geometry>
+<cylinder length="0.03" radius="0.053"/>
+</geometry>
+<origin xyz="0 0 0" rpy="1.57 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 0 0" rpy="1.57 0 0"/>
+<geometry>
+<cylinder length="0.03" radius="0.053"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.00077725" iyy="0.00077725" izz="0.0014045" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="139" type="fixed">
+<origin xyz="0 0 0.202" rpy="0 0 0"/>
+<parent link="rr"/>
+<child link="rr_cylinder"/>
+</joint>
+<link name="rrlibt_0">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="140" type="continuous">
+<origin xyz="0 0 0.0" rpy="0 0 0"/>
+<parent link="rr"/>
+<child link="rrlibt_0"/>
+<axis xyz="0 1 0"/>
+</joint>
+<link name="rrliblt1_0">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="141" type="fixed">
+<origin xyz="0 0 0" rpy="0 4.1887902024 0"/>
+<parent link="rrlibt_0"/>
+<child link="rrliblt1_0"/>
+</joint>
+<link name="rrliblt2_0">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="142" type="fixed">
+<origin xyz="0 0 0" rpy="0 2.0943951012 0"/>
+<parent link="rrlibt_0"/>
+<child link="rrliblt2_0"/>
+</joint>
+<link name="rrliblo_0">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="143" type="continuous">
+<origin xyz="0 0 0.02885714285714286" rpy="0 0.5235987753 0"/>
+<parent link="rr"/>
+<child link="rrliblo_0"/>
+<axis xyz="0 1 0"/>
+</joint>
+<link name="rrliblo1_0">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="144" type="fixed">
+<origin xyz="0 0 0" rpy="0 4.1887902024 0"/>
+<parent link="rrliblo_0"/>
+<child link="rrliblo1_0"/>
+</joint>
+<link name="rrliblo2_0">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="145" type="fixed">
+<origin xyz="0 0 0" rpy="0 2.0943951012 0"/>
+<parent link="rrliblo_0"/>
+<child link="rrliblo2_0"/>
+</joint>
+<link name="rrlibt_2">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="146" type="continuous">
+<origin xyz="0 0 0.05771428571428572" rpy="0 0 0"/>
+<parent link="rr"/>
+<child link="rrlibt_2"/>
+<axis xyz="0 1 0"/>
+</joint>
+<link name="rrliblt1_2">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="147" type="fixed">
+<origin xyz="0 0 0" rpy="0 4.1887902024 0"/>
+<parent link="rrlibt_2"/>
+<child link="rrliblt1_2"/>
+</joint>
+<link name="rrliblt2_2">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="148" type="fixed">
+<origin xyz="0 0 0" rpy="0 2.0943951012 0"/>
+<parent link="rrlibt_2"/>
+<child link="rrliblt2_2"/>
+</joint>
+<link name="rrliblo_2">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="149" type="continuous">
+<origin xyz="0 0 0.08657142857142858" rpy="0 0.5235987753 0"/>
+<parent link="rr"/>
+<child link="rrliblo_2"/>
+<axis xyz="0 1 0"/>
+</joint>
+<link name="rrliblo1_2">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="150" type="fixed">
+<origin xyz="0 0 0" rpy="0 4.1887902024 0"/>
+<parent link="rrliblo_2"/>
+<child link="rrliblo1_2"/>
+</joint>
+<link name="rrliblo2_2">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="151" type="fixed">
+<origin xyz="0 0 0" rpy="0 2.0943951012 0"/>
+<parent link="rrliblo_2"/>
+<child link="rrliblo2_2"/>
+</joint>
+<link name="rrlibt_4">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="152" type="continuous">
+<origin xyz="0 0 0.11542857142857144" rpy="0 0 0"/>
+<parent link="rr"/>
+<child link="rrlibt_4"/>
+<axis xyz="0 1 0"/>
+</joint>
+<link name="rrliblt1_4">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="153" type="fixed">
+<origin xyz="0 0 0" rpy="0 4.1887902024 0"/>
+<parent link="rrlibt_4"/>
+<child link="rrliblt1_4"/>
+</joint>
+<link name="rrliblt2_4">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="154" type="fixed">
+<origin xyz="0 0 0" rpy="0 2.0943951012 0"/>
+<parent link="rrlibt_4"/>
+<child link="rrliblt2_4"/>
+</joint>
+<link name="rrliblo_4">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="155" type="continuous">
+<origin xyz="0 0 0.1442857142857143" rpy="0 0.5235987753 0"/>
+<parent link="rr"/>
+<child link="rrliblo_4"/>
+<axis xyz="0 1 0"/>
+</joint>
+<link name="rrliblo1_4">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="156" type="fixed">
+<origin xyz="0 0 0" rpy="0 4.1887902024 0"/>
+<parent link="rrliblo_4"/>
+<child link="rrliblo1_4"/>
+</joint>
+<link name="rrliblo2_4">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="157" type="fixed">
+<origin xyz="0 0 0" rpy="0 2.0943951012 0"/>
+<parent link="rrliblo_4"/>
+<child link="rrliblo2_4"/>
+</joint>
+<link name="rrlibt_6">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="158" type="continuous">
+<origin xyz="0 0 0.17314285714285715" rpy="0 0 0"/>
+<parent link="rr"/>
+<child link="rrlibt_6"/>
+<axis xyz="0 1 0"/>
+</joint>
+<link name="rrliblt1_6">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="159" type="fixed">
+<origin xyz="0 0 0" rpy="0 4.1887902024 0"/>
+<parent link="rrlibt_6"/>
+<child link="rrliblt1_6"/>
+</joint>
+<link name="rrliblt2_6">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="160" type="fixed">
+<origin xyz="0 0 0" rpy="0 2.0943951012 0"/>
+<parent link="rrlibt_6"/>
+<child link="rrliblt2_6"/>
+</joint>
+<link name="rrliblo_6">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="161" type="continuous">
+<origin xyz="0 0 0.202" rpy="0 0.5235987753 0"/>
+<parent link="rr"/>
+<child link="rrliblo_6"/>
+<axis xyz="0 1 0"/>
+</joint>
+<link name="rrliblo1_6">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="162" type="fixed">
+<origin xyz="0 0 0" rpy="0 4.1887902024 0"/>
+<parent link="rrliblo_6"/>
+<child link="rrliblo1_6"/>
+</joint>
+<link name="rrliblo2_6">
+<visual>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<material name="white">
+<color rgba="1.0 1.0 1.0 1.0"/>
+</material>
+</visual>
+<collision>
+<geometry>
+<box size="0.03 0.03 0.128"/>
+</geometry>
+</collision>
+<inertial>
+<mass value="1"/>
+<inertia ixx="0.0014403333333333334" iyy="0.0014403333333333334" izz="0.00015" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="163" type="fixed">
+<origin xyz="0 0 0" rpy="0 2.0943951012 0"/>
+<parent link="rrliblo_6"/>
+<child link="rrliblo2_6"/>
+</joint>
+</robot>

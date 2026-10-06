@@ -1,0 +1,1186 @@
+<?xml version="1.0" ?>
+<robot name="prismatic_2" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find prismatic_2_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find prismatic_2_description)/urdf/prismatic_2.trans" />
+<xacro:include filename="$(find prismatic_2_description)/urdf/prismatic_2.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="0.07529600000000003 3.402414091753723e-17 2.126508807346077e-18" rpy="0 0 0"/>
+    <mass value="0.5346172906920585"/>
+    <inertia ixx="0.004224" iyy="0.001506" izz="0.005703" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="cgear_maint_1">
+  <inertial>
+    <origin xyz="6.139321689913046e-14 -0.039999999999999994 -4.250930002814283e-17" rpy="0 0 0"/>
+    <mass value="0.8558077419960403"/>
+    <inertia ixx="0.001777" iyy="0.002641" izz="0.001777" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_maint_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_maint_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="cgear_mainc_1">
+  <inertial>
+    <origin xyz="6.138260039145749e-14 -0.039999999999999994 -1.0627325007035708e-17" rpy="0 0 0"/>
+    <mass value="0.8558077419960404"/>
+    <inertia ixx="0.001777" iyy="0.002641" izz="0.001777" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_mainc_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_mainc_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="cgear_circle_1">
+  <inertial>
+    <origin xyz="3.278999027912229e-14 -0.039999999999999994 1.1349944714130247e-17" rpy="0 0 0"/>
+    <mass value="1.60264164219345"/>
+    <inertia ixx="0.00349" iyy="0.00527" izz="0.00349" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_circle_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_circle_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="cgear_mainc_2">
+  <inertial>
+    <origin xyz="6.142308883738679e-14 -0.039999999999999994 -1.0627325007035708e-17" rpy="0 0 0"/>
+    <mass value="0.8558077419960404"/>
+    <inertia ixx="0.001777" iyy="0.002641" izz="0.001777" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.150592 -0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_mainc_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.150592 -0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_mainc_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="cgear_maint_2">
+  <inertial>
+    <origin xyz="6.139533326177116e-14 -0.039999999999999994 -4.250930002814283e-17" rpy="0 0 0"/>
+    <mass value="0.8558077419960403"/>
+    <inertia ixx="0.001777" iyy="0.002641" izz="0.001777" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.150592 -0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_maint_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.150592 -0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_maint_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="cgear_circle_2">
+  <inertial>
+    <origin xyz="3.2807090377673376e-14 -0.039999999999999994 1.1349944714130247e-17" rpy="0 0 0"/>
+    <mass value="1.60264164219345"/>
+    <inertia ixx="0.00349" iyy="0.00527" izz="0.00349" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.150592 -0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_circle_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.150592 -0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_circle_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="cgear_mainc_3">
+  <inertial>
+    <origin xyz="6.142308883738679e-14 0.039999999999999994 1.0627325007035708e-17" rpy="0 0 0"/>
+    <mass value="0.8558077419960404"/>
+    <inertia ixx="0.001777" iyy="0.002641" izz="0.001777" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.150592 0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_mainc_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.150592 0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_mainc_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="cgear_maint_3">
+  <inertial>
+    <origin xyz="6.139533326177116e-14 0.039999999999999994 4.250930002814283e-17" rpy="0 0 0"/>
+    <mass value="0.8558077419960403"/>
+    <inertia ixx="0.001777" iyy="0.002641" izz="0.001777" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.150592 0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_maint_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.150592 0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_maint_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="cgear_circle_3">
+  <inertial>
+    <origin xyz="3.2807090377673376e-14 0.039999999999999994 -1.1349944714130247e-17" rpy="0 0 0"/>
+    <mass value="1.60264164219345"/>
+    <inertia ixx="0.00349" iyy="0.00527" izz="0.00349" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.150592 0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_circle_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.150592 0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_circle_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="cgear_maint_4">
+  <inertial>
+    <origin xyz="6.138433511493347e-14 0.039999999999999994 4.250930002814283e-17" rpy="0 0 0"/>
+    <mass value="0.8558077419960403"/>
+    <inertia ixx="0.001777" iyy="0.002641" izz="0.001777" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_maint_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_maint_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="cgear_mainc_4">
+  <inertial>
+    <origin xyz="6.13737186072605e-14 0.039999999999999994 1.0627325007035708e-17" rpy="0 0 0"/>
+    <mass value="0.8558077419960404"/>
+    <inertia ixx="0.001777" iyy="0.002641" izz="0.001777" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_mainc_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_mainc_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="cgear_circle_4">
+  <inertial>
+    <origin xyz="3.278999027912229e-14 0.039999999999999994 -1.1349944714130247e-17" rpy="0 0 0"/>
+    <mass value="1.60264164219345"/>
+    <inertia ixx="0.00349" iyy="0.00527" izz="0.00349" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_circle_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_circle_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="cgear_maint_5">
+  <inertial>
+    <origin xyz="6.137451658005944e-14 0.040000000000000036 3.80591028729209e-17" rpy="0 0 0"/>
+    <mass value="0.8558077419960403"/>
+    <inertia ixx="0.001777" iyy="0.002641" izz="0.001777" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.037648 0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_maint_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.037648 0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_maint_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="cgear_mainc_5">
+  <inertial>
+    <origin xyz="6.136063879225162e-14 0.040000000000000036 6.177127851813775e-18" rpy="0 0 0"/>
+    <mass value="0.8558077419960404"/>
+    <inertia ixx="0.001777" iyy="0.002641" izz="0.001777" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.037648 0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_mainc_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.037648 0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_mainc_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="cgear_circle_5">
+  <inertial>
+    <origin xyz="3.279321258986556e-14 0.04000000000000002 -1.1349944714130247e-17" rpy="0 0 0"/>
+    <mass value="1.60264164219345"/>
+    <inertia ixx="0.00349" iyy="0.00527" izz="0.00349" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.037648 0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_circle_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.037648 0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_circle_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="cgear_mainc_7">
+  <inertial>
+    <origin xyz="6.136063879225162e-14 0.040000000000000036 6.177127851813775e-18" rpy="0 0 0"/>
+    <mass value="0.8558077419960404"/>
+    <inertia ixx="0.001777" iyy="0.002641" izz="0.001777" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.037648 0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_mainc_7.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.037648 0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_mainc_7.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="cgear_maint_7">
+  <inertial>
+    <origin xyz="6.137451658005944e-14 0.040000000000000036 3.80591028729209e-17" rpy="0 0 0"/>
+    <mass value="0.8558077419960403"/>
+    <inertia ixx="0.001777" iyy="0.002641" izz="0.001777" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.037648 0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_maint_7.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.037648 0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_maint_7.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="cgear_circle_7">
+  <inertial>
+    <origin xyz="3.279321258986556e-14 0.04000000000000002 -1.1349944714130247e-17" rpy="0 0 0"/>
+    <mass value="1.60264164219345"/>
+    <inertia ixx="0.00349" iyy="0.00527" izz="0.00349" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.037648 0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_circle_7.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.037648 0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_circle_7.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="cgear_mainc_8">
+  <inertial>
+    <origin xyz="6.136063879225162e-14 0.040000000000000036 6.177127851813775e-18" rpy="0 0 0"/>
+    <mass value="0.8558077419960404"/>
+    <inertia ixx="0.001777" iyy="0.002641" izz="0.001777" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.037648 0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_mainc_8.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.037648 0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_mainc_8.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="cgear_maint_8">
+  <inertial>
+    <origin xyz="6.137451658005944e-14 0.040000000000000036 3.80591028729209e-17" rpy="0 0 0"/>
+    <mass value="0.8558077419960403"/>
+    <inertia ixx="0.001777" iyy="0.002641" izz="0.001777" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.037648 0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_maint_8.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.037648 0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_maint_8.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="cgear_circle_8">
+  <inertial>
+    <origin xyz="3.279321258986556e-14 0.04000000000000002 -1.1349944714130247e-17" rpy="0 0 0"/>
+    <mass value="1.60264164219345"/>
+    <inertia ixx="0.00349" iyy="0.00527" izz="0.00349" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.037648 0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_circle_8.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.037648 0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_circle_8.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="cgear_mainc_9">
+  <inertial>
+    <origin xyz="6.138145547396334e-14 -0.04000000000000002 -1.0627325007035708e-17" rpy="0 0 0"/>
+    <mass value="0.8558077419960404"/>
+    <inertia ixx="0.001777" iyy="0.002641" izz="0.001777" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.037648 -0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_mainc_9.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.037648 -0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_mainc_9.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="cgear_maint_9">
+  <inertial>
+    <origin xyz="6.138839436786725e-14 -0.04000000000000002 -4.250930002814283e-17" rpy="0 0 0"/>
+    <mass value="0.8558077419960403"/>
+    <inertia ixx="0.001777" iyy="0.002641" izz="0.001777" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.037648 -0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_maint_9.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.037648 -0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_maint_9.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="cgear_circle_9">
+  <inertial>
+    <origin xyz="3.279321258986556e-14 -0.04000000000000002 1.1349944714130247e-17" rpy="0 0 0"/>
+    <mass value="1.60264164219345"/>
+    <inertia ixx="0.00349" iyy="0.00527" izz="0.00349" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.037648 -0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_circle_9.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.037648 -0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_circle_9.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="cgear_mainc_10">
+  <inertial>
+    <origin xyz="6.138145547396334e-14 -0.04000000000000002 -1.0627325007035708e-17" rpy="0 0 0"/>
+    <mass value="0.8558077419960404"/>
+    <inertia ixx="0.001777" iyy="0.002641" izz="0.001777" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.037648 -0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_mainc_10.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.037648 -0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_mainc_10.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="cgear_maint_10">
+  <inertial>
+    <origin xyz="6.138839436786725e-14 -0.04000000000000002 -4.250930002814283e-17" rpy="0 0 0"/>
+    <mass value="0.8558077419960403"/>
+    <inertia ixx="0.001777" iyy="0.002641" izz="0.001777" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.037648 -0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_maint_10.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.037648 -0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_maint_10.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="cgear_circle_10">
+  <inertial>
+    <origin xyz="3.279321258986556e-14 -0.04000000000000002 1.1349944714130247e-17" rpy="0 0 0"/>
+    <mass value="1.60264164219345"/>
+    <inertia ixx="0.00349" iyy="0.00527" izz="0.00349" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.037648 -0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_circle_10.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.037648 -0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_circle_10.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="cgear_mainc_11">
+  <inertial>
+    <origin xyz="6.138145547396334e-14 -0.04000000000000002 -1.0627325007035708e-17" rpy="0 0 0"/>
+    <mass value="0.8558077419960404"/>
+    <inertia ixx="0.001777" iyy="0.002641" izz="0.001777" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.037648 -0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_mainc_11.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.037648 -0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_mainc_11.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="cgear_maint_11">
+  <inertial>
+    <origin xyz="6.138839436786725e-14 -0.04000000000000002 -4.250930002814283e-17" rpy="0 0 0"/>
+    <mass value="0.8558077419960403"/>
+    <inertia ixx="0.001777" iyy="0.002641" izz="0.001777" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.037648 -0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_maint_11.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.037648 -0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_maint_11.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="cgear_circle_11">
+  <inertial>
+    <origin xyz="3.279321258986556e-14 -0.04000000000000002 1.1349944714130247e-17" rpy="0 0 0"/>
+    <mass value="1.60264164219345"/>
+    <inertia ixx="0.00349" iyy="0.00527" izz="0.00349" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.037648 -0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_circle_11.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.037648 -0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_circle_11.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="cgear_maint_12">
+  <inertial>
+    <origin xyz="6.138839436786725e-14 -0.04000000000000002 -4.250930002814283e-17" rpy="0 0 0"/>
+    <mass value="0.8558077419960403"/>
+    <inertia ixx="0.001777" iyy="0.002641" izz="0.001777" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.037648 -0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_maint_12.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.037648 -0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_maint_12.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="cgear_mainc_12">
+  <inertial>
+    <origin xyz="6.138145547396334e-14 -0.04000000000000002 -1.0627325007035708e-17" rpy="0 0 0"/>
+    <mass value="0.8558077419960404"/>
+    <inertia ixx="0.001777" iyy="0.002641" izz="0.001777" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.037648 -0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_mainc_12.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.037648 -0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_mainc_12.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="cgear_circle_12">
+  <inertial>
+    <origin xyz="3.279321258986556e-14 -0.04000000000000002 1.1349944714130247e-17" rpy="0 0 0"/>
+    <mass value="1.60264164219345"/>
+    <inertia ixx="0.00349" iyy="0.00527" izz="0.00349" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.037648 -0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_circle_12.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.037648 -0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_circle_12.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="cgear_maint_13">
+  <inertial>
+    <origin xyz="6.138839436786725e-14 -0.04000000000000002 -4.250930002814283e-17" rpy="0 0 0"/>
+    <mass value="0.8558077419960403"/>
+    <inertia ixx="0.001777" iyy="0.002641" izz="0.001777" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.037648 -0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_maint_13.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.037648 -0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_maint_13.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="cgear_mainc_13">
+  <inertial>
+    <origin xyz="6.138145547396334e-14 -0.04000000000000002 -1.0627325007035708e-17" rpy="0 0 0"/>
+    <mass value="0.8558077419960404"/>
+    <inertia ixx="0.001777" iyy="0.002641" izz="0.001777" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.037648 -0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_mainc_13.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.037648 -0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_mainc_13.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="cgear_circle_13">
+  <inertial>
+    <origin xyz="3.279321258986556e-14 -0.04000000000000002 1.1349944714130247e-17" rpy="0 0 0"/>
+    <mass value="1.60264164219345"/>
+    <inertia ixx="0.00349" iyy="0.00527" izz="0.00349" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.037648 -0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_circle_13.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.037648 -0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_circle_13.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="cgear_maint_14">
+  <inertial>
+    <origin xyz="6.138839436786725e-14 0.04000000000000002 4.250930002814283e-17" rpy="0 0 0"/>
+    <mass value="0.8558077419960403"/>
+    <inertia ixx="0.001777" iyy="0.002641" izz="0.001777" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.037648 0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_maint_14.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.037648 0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_maint_14.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="cgear_mainc_14">
+  <inertial>
+    <origin xyz="6.138145547396334e-14 0.04000000000000002 1.0627325007035708e-17" rpy="0 0 0"/>
+    <mass value="0.8558077419960404"/>
+    <inertia ixx="0.001777" iyy="0.002641" izz="0.001777" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.037648 0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_mainc_14.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.037648 0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_mainc_14.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="cgear_circle_14">
+  <inertial>
+    <origin xyz="3.279321258986556e-14 0.04000000000000002 -1.1349944714130247e-17" rpy="0 0 0"/>
+    <mass value="1.60264164219345"/>
+    <inertia ixx="0.00349" iyy="0.00527" izz="0.00349" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.037648 0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_circle_14.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.037648 0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_circle_14.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="cgear_maint_15">
+  <inertial>
+    <origin xyz="6.138839436786725e-14 0.04000000000000002 4.250930002814283e-17" rpy="0 0 0"/>
+    <mass value="0.8558077419960403"/>
+    <inertia ixx="0.001777" iyy="0.002641" izz="0.001777" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.037648 0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_maint_15.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.037648 0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_maint_15.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="cgear_mainc_15">
+  <inertial>
+    <origin xyz="6.138145547396334e-14 0.04000000000000002 1.0627325007035708e-17" rpy="0 0 0"/>
+    <mass value="0.8558077419960404"/>
+    <inertia ixx="0.001777" iyy="0.002641" izz="0.001777" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.037648 0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_mainc_15.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.037648 0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_mainc_15.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="cgear_circle_15">
+  <inertial>
+    <origin xyz="3.279321258986556e-14 0.04000000000000002 -1.1349944714130247e-17" rpy="0 0 0"/>
+    <mass value="1.60264164219345"/>
+    <inertia ixx="0.00349" iyy="0.00527" izz="0.00349" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.037648 0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_circle_15.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.037648 0.159 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://prismatic_2_description/meshes/cgear_circle_15.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="1" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="cgear_circle_1"/>
+  <child link="cgear_maint_1"/>
+</joint>
+
+<joint name="2" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="cgear_circle_1"/>
+  <child link="cgear_mainc_1"/>
+</joint>
+
+<joint name="3" type="continuous">
+  <origin xyz="0.0 0.159 0.0" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="cgear_circle_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="4" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="cgear_circle_2"/>
+  <child link="cgear_mainc_2"/>
+</joint>
+
+<joint name="5" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="cgear_circle_2"/>
+  <child link="cgear_maint_2"/>
+</joint>
+
+<joint name="6" type="continuous">
+  <origin xyz="0.150592 0.159 0.0" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="cgear_circle_2"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="7" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="cgear_circle_3"/>
+  <child link="cgear_mainc_3"/>
+</joint>
+
+<joint name="8" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="cgear_circle_3"/>
+  <child link="cgear_maint_3"/>
+</joint>
+
+<joint name="9" type="continuous">
+  <origin xyz="0.150592 -0.159 0.0" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="cgear_circle_3"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="10" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="cgear_circle_4"/>
+  <child link="cgear_maint_4"/>
+</joint>
+
+<joint name="11" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="cgear_circle_4"/>
+  <child link="cgear_mainc_4"/>
+</joint>
+
+<joint name="12" type="continuous">
+  <origin xyz="0.0 -0.159 0.0" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="cgear_circle_4"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="13" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="cgear_circle_5"/>
+  <child link="cgear_maint_5"/>
+</joint>
+
+<joint name="14" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="cgear_circle_5"/>
+  <child link="cgear_mainc_5"/>
+</joint>
+
+<joint name="17" type="prismatic">
+  <origin xyz="0.037648 -0.159 0.0" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="cgear_circle_5"/>
+  <axis xyz="1.0 0.0 0.0"/>
+  <limit upper="0.075" lower="0.0" effort="100" velocity="100"/>
+</joint>
+
+<joint name="18" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="cgear_circle_7"/>
+  <child link="cgear_mainc_7"/>
+</joint>
+
+<joint name="19" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="cgear_circle_7"/>
+  <child link="cgear_maint_7"/>
+</joint>
+
+<joint name="20" type="prismatic">
+  <origin xyz="0.037648 -0.159 0.0" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="cgear_circle_7"/>
+  <axis xyz="1.0 0.0 0.0"/>
+  <limit upper="0.075" lower="0.0" effort="100" velocity="100"/>
+</joint>
+
+<joint name="21" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="cgear_circle_8"/>
+  <child link="cgear_mainc_8"/>
+</joint>
+
+<joint name="22" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="cgear_circle_8"/>
+  <child link="cgear_maint_8"/>
+</joint>
+
+<joint name="23" type="prismatic">
+  <origin xyz="0.037648 -0.159 0.0" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="cgear_circle_8"/>
+  <axis xyz="1.0 0.0 0.0"/>
+  <limit upper="0.075" lower="0.0" effort="100" velocity="100"/>
+</joint>
+
+<joint name="24" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="cgear_circle_9"/>
+  <child link="cgear_mainc_9"/>
+</joint>
+
+<joint name="25" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="cgear_circle_9"/>
+  <child link="cgear_maint_9"/>
+</joint>
+
+<joint name="26" type="prismatic">
+  <origin xyz="0.037648 0.159 0.0" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="cgear_circle_9"/>
+  <axis xyz="1.0 0.0 0.0"/>
+  <limit upper="0.075" lower="0.0" effort="100" velocity="100"/>
+</joint>
+
+<joint name="27" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="cgear_circle_10"/>
+  <child link="cgear_mainc_10"/>
+</joint>
+
+<joint name="28" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="cgear_circle_10"/>
+  <child link="cgear_maint_10"/>
+</joint>
+
+<joint name="29" type="prismatic">
+  <origin xyz="0.037648 0.159 0.0" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="cgear_circle_10"/>
+  <axis xyz="1.0 0.0 0.0"/>
+  <limit upper="0.075" lower="0.0" effort="100" velocity="100"/>
+</joint>
+
+<joint name="30" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="cgear_circle_11"/>
+  <child link="cgear_mainc_11"/>
+</joint>
+
+<joint name="31" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="cgear_circle_11"/>
+  <child link="cgear_maint_11"/>
+</joint>
+
+<joint name="32" type="prismatic">
+  <origin xyz="0.037648 0.159 0.0" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="cgear_circle_11"/>
+  <axis xyz="1.0 0.0 0.0"/>
+  <limit upper="0.075" lower="0.0" effort="100" velocity="100"/>
+</joint>
+
+<joint name="33" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="cgear_circle_12"/>
+  <child link="cgear_maint_12"/>
+</joint>
+
+<joint name="34" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="cgear_circle_12"/>
+  <child link="cgear_mainc_12"/>
+</joint>
+
+<joint name="35" type="prismatic">
+  <origin xyz="0.037648 0.159 0.0" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="cgear_circle_12"/>
+  <axis xyz="1.0 0.0 0.0"/>
+  <limit upper="0.075" lower="0.0" effort="100" velocity="100"/>
+</joint>
+
+<joint name="36" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="cgear_circle_13"/>
+  <child link="cgear_maint_13"/>
+</joint>
+
+<joint name="37" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="cgear_circle_13"/>
+  <child link="cgear_mainc_13"/>
+</joint>
+
+<joint name="38" type="prismatic">
+  <origin xyz="0.037648 0.159 0.0" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="cgear_circle_13"/>
+  <axis xyz="1.0 0.0 0.0"/>
+  <limit upper="0.075" lower="0.0" effort="100" velocity="100"/>
+</joint>
+
+<joint name="39" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="cgear_circle_14"/>
+  <child link="cgear_maint_14"/>
+</joint>
+
+<joint name="40" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="cgear_circle_14"/>
+  <child link="cgear_mainc_14"/>
+</joint>
+
+<joint name="41" type="prismatic">
+  <origin xyz="0.037648 -0.159 0.0" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="cgear_circle_14"/>
+  <axis xyz="1.0 0.0 0.0"/>
+  <limit upper="0.075" lower="0.0" effort="100" velocity="100"/>
+</joint>
+
+<joint name="42" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="cgear_circle_15"/>
+  <child link="cgear_maint_15"/>
+</joint>
+
+<joint name="43" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="cgear_circle_15"/>
+  <child link="cgear_mainc_15"/>
+</joint>
+
+<joint name="44" type="prismatic">
+  <origin xyz="0.037648 -0.159 0.0" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="cgear_circle_15"/>
+  <axis xyz="1.0 0.0 0.0"/>
+  <limit upper="0.075" lower="0.0" effort="100" velocity="100"/>
+</joint>
+
+</robot>

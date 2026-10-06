@@ -1,0 +1,103 @@
+prismatic4_controller:
+  # Publish all joint states -----------------------------------
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50
+
+  # Position Controllers --------------------------------------
+  回転 3_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: 回転 3
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  回転 6_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: 回転 6
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  回転 9_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: 回転 9
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  回転 12_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: 回転 12
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  スライダ 15_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: スライダ 15
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  スライダ 18_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: スライダ 18
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  スライダ 21_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: スライダ 21
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  スライダ 24_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: スライダ 24
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  スライダ 27_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: スライダ 27
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  スライダ 30_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: スライダ 30
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  スライダ 33_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: スライダ 33
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  スライダ 36_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: スライダ 36
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  スライダ 39_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: スライダ 39
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  スライダ 42_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: スライダ 42
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  スライダ 48_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: スライダ 48
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  スライダ 51_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: スライダ 51
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  スライダ 54_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: スライダ 54
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  スライダ 57_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: スライダ 57
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  スライダ 60_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: スライダ 60
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  スライダ 63_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: スライダ 63
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  スライダ 66_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: スライダ 66
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  スライダ 69_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: スライダ 69
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  スライダ 72_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: スライダ 72
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  スライダ 75_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: スライダ 75
+    pid: {p: 100.0, i: 0.01, d: 10.0}

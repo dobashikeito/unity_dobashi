@@ -1,0 +1,23 @@
+easy_imax10_controller:
+  # Publish all joint states -----------------------------------
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50
+
+  # Position Controllers --------------------------------------
+  19_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: 19
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  20_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: 20
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  21_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: 21
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  22_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: 22
+    pid: {p: 100.0, i: 0.01, d: 10.0}

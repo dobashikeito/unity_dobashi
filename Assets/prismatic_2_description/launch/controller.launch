@@ -1,0 +1,9 @@
+<launch>
+
+<rosparam file="$(find prismatic_2_description)/launch/controller.yaml" command="load"/>
+<node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen" ns="prismatic_2" args="回転 3_position_controller 回転 6_position_controller 回転 9_position_controller 回転 12_position_controller スライダ 17_position_controller スライダ 20_position_controller スライダ 23_position_controller スライダ 26_position_controller スライダ 29_position_controller スライダ 32_position_controller スライダ 35_position_controller スライダ 38_position_controller スライダ 41_position_controller スライダ 44_position_controller joint_state_controller "/>
+<node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="false" output="screen">
+  <remap from="/joint_states" to="/prismatic_2/joint_states"/>
+</node>
+
+</launch>

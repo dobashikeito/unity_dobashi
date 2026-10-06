@@ -1,0 +1,9 @@
+<launch>
+
+<rosparam file="$(find easy_j1_description)/launch/controller.yaml" command="load"/>
+<node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen" ns="easy_j1" args="‰ñ“] 1_position_controller ‰ñ“] 2_position_controller ‰ñ“] 3_position_controller ‰ñ“] 4_position_controller ‰ñ“] 5_position_controller ‰ñ“] 6_position_controller ‰ñ“] 7_position_controller ‰ñ“] 8_position_controller ‰ñ“] 9_position_controller ‰ñ“] 10_position_controller ‰ñ“] 11_position_controller ‰ñ“] 12_position_controller ‰ñ“] 13_position_controller ‰ñ“] 14_position_controller ‰ñ“] 15_position_controller ‰ñ“] 16_position_controller ‰ñ“] 17_position_controller ‰ñ“] 18_position_controller ‰ñ“] 19_position_controller ‰ñ“] 20_position_controller ‰ñ“] 21_position_controller ‰ñ“] 22_position_controller ‰ñ“] 23_position_controller ‰ñ“] 24_position_controller ‰ñ“] 25_position_controller ‰ñ“] 26_position_controller ‰ñ“] 27_position_controller ‰ñ“] 28_position_controller ‰ñ“] 29_position_controller ‰ñ“] 30_position_controller ‰ñ“] 31_position_controller ‰ñ“] 32_position_controller ‰ñ“] 33_position_controller ‰ñ“] 34_position_controller ‰ñ“] 35_position_controller ‰ñ“] 36_position_controller ‰ñ“] 37_position_controller ‰ñ“] 38_position_controller ‰ñ“] 39_position_controller ‰ñ“] 40_position_controller ‰ñ“] 41_position_controller ‰ñ“] 42_position_controller ‰ñ“] 43_position_controller ‰ñ“] 44_position_controller ‰ñ“] 45_position_controller ‰ñ“] 46_position_controller ‰ñ“] 47_position_controller ‰ñ“] 48_position_controller ‰ñ“] 49_position_controller ‰ñ“] 50_position_controller ‰ñ“] 51_position_controller ‰ñ“] 52_position_controller ‰ñ“] 53_position_controller ‰ñ“] 54_position_controller joint_state_controller "/>
+<node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="false" output="screen">
+  <remap from="/joint_states" to="/easy_j1/joint_states"/>
+</node>
+
+</launch>

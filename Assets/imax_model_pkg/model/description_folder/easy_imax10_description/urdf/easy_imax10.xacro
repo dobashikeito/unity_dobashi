@@ -1,0 +1,2860 @@
+<?xml version="1.0" ?>
+<robot name="easy_imax10" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find easy_imax10_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find easy_imax10_description)/urdf/easy_imax10.trans" />
+<xacro:include filename="$(find easy_imax10_description)/urdf/easy_imax10.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="-0.09358406483271121 0.24441195938048657 0.011852223910361307" rpy="0 0 0"/>
+    <mass value="1.2099574875277086"/>
+    <inertia ixx="0.012249" iyy="0.014034" izz="0.02622" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="7_1">
+  <inertial>
+    <origin xyz="0.0004923627803045116 0.07499995938048656 0.00057336229897181" rpy="0 0 0"/>
+    <mass value="0.7367843289189576"/>
+    <inertia ixx="0.002329" iyy="0.002042" izz="0.002476" ixy="0.0" iyz="0.0" ixz="0.00097"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.263 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/7_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.263 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/7_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="9_1">
+  <inertial>
+    <origin xyz="-0.0005531661373973096 0.07499995938048651 0.0005095817681569619" rpy="0 0 0"/>
+    <mass value="0.7351145457295356"/>
+    <inertia ixx="0.00244" iyy="0.002037" izz="0.002353" ixy="0.0" iyz="0.0" ixz="-0.000969"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.263 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/9_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.263 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/9_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="10_1">
+  <inertial>
+    <origin xyz="-0.0007636679172838834 0.07499995938048876 0.0003819581144337454" rpy="0 0 0"/>
+    <mass value="0.73978681659222"/>
+    <inertia ixx="0.003404" iyy="0.002066" izz="0.001436" ixy="0.0" iyz="-0.0" ixz="2.9e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.263 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/10_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.263 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/10_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="8_1">
+  <inertial>
+    <origin xyz="-2.3164313873502707e-05 0.07499995938048654 0.0007691874477268029" rpy="0 0 0"/>
+    <mass value="0.7360371753107673"/>
+    <inertia ixx="0.00143" iyy="0.00204" izz="0.00337" ixy="-0.0" iyz="0.0" ixz="-5.8e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.263 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/8_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.263 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/8_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="8_2">
+  <inertial>
+    <origin xyz="-2.316431387347495e-05 0.07499995938048654 0.0007691874477268029" rpy="0 0 0"/>
+    <mass value="0.7360371753107673"/>
+    <inertia ixx="0.00143" iyy="0.00204" izz="0.00337" ixy="-0.0" iyz="0.0" ixz="-5.8e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.187704 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/8_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.187704 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/8_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="9_2">
+  <inertial>
+    <origin xyz="-0.0005531661373973096 0.07499995938048651 0.0005095817681569619" rpy="0 0 0"/>
+    <mass value="0.7351145457295356"/>
+    <inertia ixx="0.00244" iyy="0.002037" izz="0.002353" ixy="0.0" iyz="0.0" ixz="-0.000969"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.187704 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/9_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.187704 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/9_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="10_2">
+  <inertial>
+    <origin xyz="-0.0007636679172838279 0.07499995938048876 0.0003819581144337454" rpy="0 0 0"/>
+    <mass value="0.73978681659222"/>
+    <inertia ixx="0.003404" iyy="0.002066" izz="0.001436" ixy="0.0" iyz="-0.0" ixz="2.9e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.187704 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/10_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.187704 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/10_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="7_2">
+  <inertial>
+    <origin xyz="0.0004923627803044839 0.07499995938048656 0.00057336229897181" rpy="0 0 0"/>
+    <mass value="0.7367843289189576"/>
+    <inertia ixx="0.002329" iyy="0.002042" izz="0.002476" ixy="0.0" iyz="0.0" ixz="0.00097"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.187704 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/7_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.187704 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/7_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="15_1">
+  <inertial>
+    <origin xyz="-0.0007636679172838834 -0.07500004061951576 0.00038195811443372807" rpy="0 0 0"/>
+    <mass value="0.7397868165922202"/>
+    <inertia ixx="0.003404" iyy="0.002066" izz="0.001436" ixy="-0.0" iyz="-0.0" ixz="2.9e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.263 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/15_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.263 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/15_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="12_1">
+  <inertial>
+    <origin xyz="-0.0005531661373973096 -0.07500004061951349 0.0005095817681570174" rpy="0 0 0"/>
+    <mass value="0.7351145457295358"/>
+    <inertia ixx="0.00244" iyy="0.002037" izz="0.002353" ixy="0.0" iyz="0.0" ixz="-0.000969"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.263 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/12_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.263 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/12_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="13_1">
+  <inertial>
+    <origin xyz="0.0004923627803044561 -0.07500004061951349 0.0005733622989718169" rpy="0 0 0"/>
+    <mass value="0.7367843289189574"/>
+    <inertia ixx="0.002329" iyy="0.002042" izz="0.002476" ixy="-0.0" iyz="0.0" ixz="0.00097"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.263 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/13_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.263 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/13_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="14_1">
+  <inertial>
+    <origin xyz="-2.3164313873447195e-05 -0.07500004061951349 0.0007691874477268081" rpy="0 0 0"/>
+    <mass value="0.7360371753107673"/>
+    <inertia ixx="0.00143" iyy="0.00204" izz="0.00337" ixy="-0.0" iyz="0.0" ixz="-5.8e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.263 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/14_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.263 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/14_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="14_2">
+  <inertial>
+    <origin xyz="-2.316431387342638e-05 -0.07500004061951349 0.0007691874477268081" rpy="0 0 0"/>
+    <mass value="0.7360371753107673"/>
+    <inertia ixx="0.00143" iyy="0.00204" izz="0.00337" ixy="0.0" iyz="0.0" ixz="-5.8e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.038184 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/14_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.038184 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/14_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="12_2">
+  <inertial>
+    <origin xyz="-0.0005531661373973096 -0.07500004061951349 0.0005095817681570174" rpy="0 0 0"/>
+    <mass value="0.7351145457295358"/>
+    <inertia ixx="0.00244" iyy="0.002037" izz="0.002353" ixy="0.0" iyz="0.0" ixz="-0.000969"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.038184 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/12_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.038184 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/12_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="13_2">
+  <inertial>
+    <origin xyz="0.0004923627803044978 -0.07500004061951349 0.0005733622989718169" rpy="0 0 0"/>
+    <mass value="0.7367843289189574"/>
+    <inertia ixx="0.002329" iyy="0.002042" izz="0.002476" ixy="0.0" iyz="0.0" ixz="0.00097"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.038184 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/13_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.038184 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/13_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="15_2">
+  <inertial>
+    <origin xyz="-0.0007636679172838348 -0.07500004061951576 0.00038195811443372807" rpy="0 0 0"/>
+    <mass value="0.7397868165922202"/>
+    <inertia ixx="0.003404" iyy="0.002066" izz="0.001436" ixy="0.0" iyz="-0.0" ixz="2.9e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.038184 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/15_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.038184 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/15_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="6_1">
+  <inertial>
+    <origin xyz="-6.483270725832213e-08 0.07499995938048651 2.239103613198984e-07" rpy="0 0 0"/>
+    <mass value="3.040295996465602"/>
+    <inertia ixx="0.010642" iyy="0.009884" izz="0.010642" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.263 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/6_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.263 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/6_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="11_1">
+  <inertial>
+    <origin xyz="-6.483270725832213e-08 -0.07500004061951349 2.2391036132683728e-07" rpy="0 0 0"/>
+    <mass value="3.040295996465602"/>
+    <inertia ixx="0.010642" iyy="0.009884" izz="0.010642" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.263 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/11_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.263 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/11_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="8_5">
+  <inertial>
+    <origin xyz="-2.3164313873405562e-05 0.07499995938048654 0.0007691874477268029" rpy="0 0 0"/>
+    <mass value="0.7360371753107673"/>
+    <inertia ixx="0.00143" iyy="0.00204" izz="0.00337" ixy="0.0" iyz="0.0" ixz="-5.8e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.038184 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/8_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.038184 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/8_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="9_5">
+  <inertial>
+    <origin xyz="-0.0005531661373972679 0.07499995938048651 0.0005095817681569619" rpy="0 0 0"/>
+    <mass value="0.7351145457295356"/>
+    <inertia ixx="0.00244" iyy="0.002037" izz="0.002353" ixy="0.0" iyz="0.0" ixz="-0.000969"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.038184 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/9_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.038184 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/9_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="7_5">
+  <inertial>
+    <origin xyz="0.0004923627803045394 0.07499995938048656 0.00057336229897181" rpy="0 0 0"/>
+    <mass value="0.7367843289189576"/>
+    <inertia ixx="0.002329" iyy="0.002042" izz="0.002476" ixy="0.0" iyz="0.0" ixz="0.00097"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.038184 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/7_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.038184 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/7_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="10_5">
+  <inertial>
+    <origin xyz="-0.0007636679172838001 0.07499995938048876 0.0003819581144337454" rpy="0 0 0"/>
+    <mass value="0.73978681659222"/>
+    <inertia ixx="0.003404" iyy="0.002066" izz="0.001436" ixy="-0.0" iyz="-0.0" ixz="2.9e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.038184 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/10_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.038184 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/10_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="10_4">
+  <inertial>
+    <origin xyz="-0.0007636679172838209 0.07499995938048876 0.0003819581144337454" rpy="0 0 0"/>
+    <mass value="0.73978681659222"/>
+    <inertia ixx="0.003404" iyy="0.002066" izz="0.001436" ixy="-0.0" iyz="-0.0" ixz="2.9e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.037112 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/10_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.037112 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/10_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="7_4">
+  <inertial>
+    <origin xyz="0.0004923627803045186 0.07499995938048656 0.00057336229897181" rpy="0 0 0"/>
+    <mass value="0.7367843289189576"/>
+    <inertia ixx="0.002329" iyy="0.002042" izz="0.002476" ixy="0.0" iyz="0.0" ixz="0.00097"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.037112 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/7_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.037112 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/7_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="8_4">
+  <inertial>
+    <origin xyz="-2.316431387342638e-05 0.07499995938048654 0.0007691874477268029" rpy="0 0 0"/>
+    <mass value="0.7360371753107673"/>
+    <inertia ixx="0.00143" iyy="0.00204" izz="0.00337" ixy="0.0" iyz="0.0" ixz="-5.8e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.037112 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/8_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.037112 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/8_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="9_4">
+  <inertial>
+    <origin xyz="-0.0005531661373972888 0.07499995938048651 0.0005095817681569619" rpy="0 0 0"/>
+    <mass value="0.7351145457295356"/>
+    <inertia ixx="0.00244" iyy="0.002037" izz="0.002353" ixy="0.0" iyz="0.0" ixz="-0.000969"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.037112 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/9_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.037112 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/9_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="7_3">
+  <inertial>
+    <origin xyz="0.0004923627803044839 0.07499995938048656 0.00057336229897181" rpy="0 0 0"/>
+    <mass value="0.7367843289189576"/>
+    <inertia ixx="0.002329" iyy="0.002042" izz="0.002476" ixy="-0.0" iyz="0.0" ixz="0.00097"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.112408 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/7_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.112408 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/7_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="9_3">
+  <inertial>
+    <origin xyz="-0.0005531661373973096 0.07499995938048651 0.0005095817681569619" rpy="0 0 0"/>
+    <mass value="0.7351145457295356"/>
+    <inertia ixx="0.00244" iyy="0.002037" izz="0.002353" ixy="0.0" iyz="0.0" ixz="-0.000969"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.112408 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/9_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.112408 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/9_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="8_3">
+  <inertial>
+    <origin xyz="-2.3164313873447195e-05 0.07499995938048654 0.0007691874477268029" rpy="0 0 0"/>
+    <mass value="0.7360371753107673"/>
+    <inertia ixx="0.00143" iyy="0.00204" izz="0.00337" ixy="-0.0" iyz="0.0" ixz="-5.8e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.112408 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/8_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.112408 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/8_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="10_3">
+  <inertial>
+    <origin xyz="-0.0007636679172838556 0.07499995938048876 0.0003819581144337454" rpy="0 0 0"/>
+    <mass value="0.73978681659222"/>
+    <inertia ixx="0.003404" iyy="0.002066" izz="0.001436" ixy="-0.0" iyz="-0.0" ixz="2.9e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.112408 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/10_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.112408 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/10_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="6_2">
+  <inertial>
+    <origin xyz="-6.483270720281098e-08 0.07499995938048651 2.239103613198984e-07" rpy="0 0 0"/>
+    <mass value="3.040295996465602"/>
+    <inertia ixx="0.010642" iyy="0.009884" izz="0.010642" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.187704 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/6_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.187704 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/6_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="6_3">
+  <inertial>
+    <origin xyz="-6.483270721668877e-08 0.07499995938048651 2.239103613198984e-07" rpy="0 0 0"/>
+    <mass value="3.040295996465602"/>
+    <inertia ixx="0.010642" iyy="0.009884" izz="0.010642" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.112408 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/6_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.112408 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/6_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="6_4">
+  <inertial>
+    <origin xyz="-6.48327071819943e-08 0.07499995938048651 2.239103613198984e-07" rpy="0 0 0"/>
+    <mass value="3.040295996465602"/>
+    <inertia ixx="0.010642" iyy="0.009884" izz="0.010642" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.037112 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/6_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.037112 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/6_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="6_5">
+  <inertial>
+    <origin xyz="-6.483270715423872e-08 0.07499995938048651 2.239103613198984e-07" rpy="0 0 0"/>
+    <mass value="3.040295996465602"/>
+    <inertia ixx="0.010642" iyy="0.009884" izz="0.010642" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.038184 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/6_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.038184 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/6_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="14_4">
+  <inertial>
+    <origin xyz="-2.3164313873530462e-05 -0.07500004061951326 0.0007691874477268046" rpy="0 0 0"/>
+    <mass value="0.7360371753107673"/>
+    <inertia ixx="0.00143" iyy="0.00204" izz="0.00337" ixy="0.0" iyz="0.0" ixz="-5.8e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.187704 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/14_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.187704 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/14_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="15_4">
+  <inertial>
+    <origin xyz="-0.0007636679172839389 -0.07500004061951554 0.00038195811443372807" rpy="0 0 0"/>
+    <mass value="0.7397868165922202"/>
+    <inertia ixx="0.003404" iyy="0.002066" izz="0.001436" ixy="0.0" iyz="-0.0" ixz="2.9e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.187704 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/15_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.187704 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/15_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="12_4">
+  <inertial>
+    <origin xyz="-0.0005531661373974206 -0.07500004061951326 0.0005095817681570174" rpy="0 0 0"/>
+    <mass value="0.7351145457295358"/>
+    <inertia ixx="0.00244" iyy="0.002037" izz="0.002353" ixy="0.0" iyz="0.0" ixz="-0.000969"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.187704 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/12_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.187704 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/12_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="13_4">
+  <inertial>
+    <origin xyz="0.0004923627803043729 -0.07500004061951326 0.0005733622989718169" rpy="0 0 0"/>
+    <mass value="0.7367843289189574"/>
+    <inertia ixx="0.002329" iyy="0.002042" izz="0.002476" ixy="0.0" iyz="0.0" ixz="0.00097"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.187704 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/13_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.187704 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/13_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="12_5">
+  <inertial>
+    <origin xyz="-0.0005531661373973235 -0.07500004061951349 0.0005095817681570174" rpy="0 0 0"/>
+    <mass value="0.7351145457295358"/>
+    <inertia ixx="0.00244" iyy="0.002037" izz="0.002353" ixy="0.0" iyz="0.0" ixz="-0.000969"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.112408 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/12_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.112408 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/12_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="14_5">
+  <inertial>
+    <origin xyz="-2.3164313873447195e-05 -0.07500004061951349 0.0007691874477268081" rpy="0 0 0"/>
+    <mass value="0.7360371753107673"/>
+    <inertia ixx="0.00143" iyy="0.00204" izz="0.00337" ixy="0.0" iyz="0.0" ixz="-5.8e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.112408 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/14_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.112408 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/14_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="13_5">
+  <inertial>
+    <origin xyz="0.0004923627803044978 -0.07500004061951349 0.0005733622989718169" rpy="0 0 0"/>
+    <mass value="0.7367843289189574"/>
+    <inertia ixx="0.002329" iyy="0.002042" izz="0.002476" ixy="-0.0" iyz="0.0" ixz="0.00097"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.112408 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/13_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.112408 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/13_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="15_5">
+  <inertial>
+    <origin xyz="-0.0007636679172838556 -0.07500004061951576 0.00038195811443372807" rpy="0 0 0"/>
+    <mass value="0.7397868165922202"/>
+    <inertia ixx="0.003404" iyy="0.002066" izz="0.001436" ixy="-0.0" iyz="-0.0" ixz="2.9e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.112408 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/15_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.112408 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/15_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="15_3">
+  <inertial>
+    <origin xyz="-0.0007636679172838209 -0.07500004061951598 0.0003819581144337246" rpy="0 0 0"/>
+    <mass value="0.7397868165922202"/>
+    <inertia ixx="0.003404" iyy="0.002066" izz="0.001436" ixy="0.0" iyz="-0.0" ixz="2.9e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.037112 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/15_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.037112 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/15_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="12_3">
+  <inertial>
+    <origin xyz="-0.0005531661373973026 -0.07500004061951371 0.0005095817681570174" rpy="0 0 0"/>
+    <mass value="0.7351145457295358"/>
+    <inertia ixx="0.00244" iyy="0.002037" izz="0.002353" ixy="-0.0" iyz="0.0" ixz="-0.000969"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.037112 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/12_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.037112 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/12_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="14_3">
+  <inertial>
+    <origin xyz="-2.31643138734125e-05 -0.07500004061951371 0.0007691874477268046" rpy="0 0 0"/>
+    <mass value="0.7360371753107673"/>
+    <inertia ixx="0.00143" iyy="0.00204" izz="0.00337" ixy="0.0" iyz="0.0" ixz="-5.8e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.037112 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/14_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.037112 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/14_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="13_3">
+  <inertial>
+    <origin xyz="0.0004923627803045186 -0.07500004061951365 0.0005733622989718169" rpy="0 0 0"/>
+    <mass value="0.7367843289189574"/>
+    <inertia ixx="0.002329" iyy="0.002042" izz="0.002476" ixy="0.0" iyz="0.0" ixz="0.00097"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.037112 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/13_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.037112 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/13_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="11_4">
+  <inertial>
+    <origin xyz="-6.483270731383328e-08 -0.07500004061951326 2.2391036132683728e-07" rpy="0 0 0"/>
+    <mass value="3.040295996465602"/>
+    <inertia ixx="0.010642" iyy="0.009884" izz="0.010642" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.187704 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/11_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.187704 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/11_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="11_5">
+  <inertial>
+    <origin xyz="-6.483270721668877e-08 -0.07500004061951349 2.2391036132683728e-07" rpy="0 0 0"/>
+    <mass value="3.040295996465602"/>
+    <inertia ixx="0.010642" iyy="0.009884" izz="0.010642" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.112408 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/11_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.112408 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/11_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="11_3">
+  <inertial>
+    <origin xyz="-6.48327071819943e-08 -0.07500004061951371 2.2391036132683728e-07" rpy="0 0 0"/>
+    <mass value="3.040295996465602"/>
+    <inertia ixx="0.010642" iyy="0.009884" izz="0.010642" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.037112 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/11_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.037112 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/11_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="11_2">
+  <inertial>
+    <origin xyz="-6.483270718893319e-08 -0.07500004061951349 2.2391036132683728e-07" rpy="0 0 0"/>
+    <mass value="3.040295996465602"/>
+    <inertia ixx="0.010642" iyy="0.009884" izz="0.010642" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.038184 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/11_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.038184 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/11_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="18_4">
+  <inertial>
+    <origin xyz="0.0002959415388199549 -0.07500004061951349 0.000710307522226972" rpy="0 0 0"/>
+    <mass value="0.7360371753107705"/>
+    <inertia ixx="0.001716" iyy="0.00204" izz="0.003084" ixy="0.0" iyz="0.0" ixz="0.00069"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.225352 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/18_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.225352 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/18_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="17_4">
+  <inertial>
+    <origin xyz="0.0006848687305465173 -0.07500004061951349 0.00031934548667865784" rpy="0 0 0"/>
+    <mass value="0.7367843289191651"/>
+    <inertia ixx="0.003082" iyy="0.002042" izz="0.001722" ixy="0.0" iyz="-0.0" ixz="0.000695"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.225352 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/17_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.225352 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/17_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="20_4">
+  <inertial>
+    <origin xyz="-0.00070311007469126 -0.07500004061951349 0.00030250539749119773" rpy="0 0 0"/>
+    <mass value="0.7362464663862833"/>
+    <inertia ixx="0.003063" iyy="0.00204" izz="0.001738" ixy="0.0" iyz="0.0" ixz="-0.00071"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.225352 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/20_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.225352 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/20_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="19_4">
+  <inertial>
+    <origin xyz="-0.0002875143667093738 -0.07500004061951349 0.0007138143203527913" rpy="0 0 0"/>
+    <mass value="0.7360371753107763"/>
+    <inertia ixx="0.0017" iyy="0.00204" izz="0.0031" ixy="0.0" iyz="-0.0" ixz="-0.000673"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.225352 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/19_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.225352 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/19_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="19_3">
+  <inertial>
+    <origin xyz="-0.0002875143667093738 -0.07500004061951338 0.0007138143203527982" rpy="0 0 0"/>
+    <mass value="0.7360371753107763"/>
+    <inertia ixx="0.0017" iyy="0.00204" izz="0.0031" ixy="0.0" iyz="-0.0" ixz="-0.000673"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.150056 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/19_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.150056 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/19_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="18_1">
+  <inertial>
+    <origin xyz="0.0002959415388200243 -0.07500004061951349 0.000710307522226972" rpy="0 0 0"/>
+    <mass value="0.7360371753107705"/>
+    <inertia ixx="0.001716" iyy="0.00204" izz="0.003084" ixy="0.0" iyz="0.0" ixz="0.00069"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.07476 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/18_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.07476 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/18_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="17_1">
+  <inertial>
+    <origin xyz="0.0006848687305466006 -0.07500004061951349 0.00031934548667865784" rpy="0 0 0"/>
+    <mass value="0.7367843289191651"/>
+    <inertia ixx="0.003082" iyy="0.002042" izz="0.001722" ixy="0.0" iyz="-0.0" ixz="0.000695"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.07476 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/17_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.07476 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/17_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="19_1">
+  <inertial>
+    <origin xyz="-0.0002875143667093044 -0.07500004061951349 0.0007138143203527913" rpy="0 0 0"/>
+    <mass value="0.7360371753107763"/>
+    <inertia ixx="0.0017" iyy="0.00204" izz="0.0031" ixy="-0.0" iyz="-0.0" ixz="-0.000673"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.07476 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/19_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.07476 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/19_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="20_1">
+  <inertial>
+    <origin xyz="-0.0007031100746913016 -0.07500004061951349 0.00030250539749119773" rpy="0 0 0"/>
+    <mass value="0.7362464663862833"/>
+    <inertia ixx="0.003063" iyy="0.00204" izz="0.001738" ixy="0.0" iyz="0.0" ixz="-0.00071"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.07476 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/20_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.07476 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/20_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="18_2">
+  <inertial>
+    <origin xyz="0.0002959415388200425 -0.07500004061951349 0.000710307522226972" rpy="0 0 0"/>
+    <mass value="0.7360371753107705"/>
+    <inertia ixx="0.001716" iyy="0.00204" izz="0.003084" ixy="0.0" iyz="0.0" ixz="0.00069"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.000536 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/18_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.000536 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/18_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="19_2">
+  <inertial>
+    <origin xyz="-0.0002875143667092741 -0.07500004061951349 0.0007138143203527913" rpy="0 0 0"/>
+    <mass value="0.7360371753107763"/>
+    <inertia ixx="0.0017" iyy="0.00204" izz="0.0031" ixy="-0.0" iyz="-0.0" ixz="-0.000673"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.000536 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/19_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.000536 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/19_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="20_2">
+  <inertial>
+    <origin xyz="-0.0007031100746912066 -0.07500004061951349 0.00030250539749119773" rpy="0 0 0"/>
+    <mass value="0.7362464663862833"/>
+    <inertia ixx="0.003063" iyy="0.00204" izz="0.001738" ixy="0.0" iyz="0.0" ixz="-0.00071"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.000536 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/20_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.000536 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/20_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="17_2">
+  <inertial>
+    <origin xyz="0.0006848687305466257 -0.07500004061951349 0.00031934548667865784" rpy="0 0 0"/>
+    <mass value="0.7367843289191651"/>
+    <inertia ixx="0.003082" iyy="0.002042" izz="0.001722" ixy="-0.0" iyz="-0.0" ixz="0.000695"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.000536 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/17_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.000536 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/17_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="18_5">
+  <inertial>
+    <origin xyz="0.00029594153882003815 -0.07500004061951349 0.000710307522226972" rpy="0 0 0"/>
+    <mass value="0.7360371753107705"/>
+    <inertia ixx="0.001716" iyy="0.00204" izz="0.003084" ixy="0.0" iyz="0.0" ixz="0.00069"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.075832 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/18_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.075832 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/18_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="17_5">
+  <inertial>
+    <origin xyz="0.0006848687305466145 -0.07500004061951349 0.00031934548667865784" rpy="0 0 0"/>
+    <mass value="0.7367843289191651"/>
+    <inertia ixx="0.003082" iyy="0.002042" izz="0.001722" ixy="0.0" iyz="-0.0" ixz="0.000695"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.075832 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/17_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.075832 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/17_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="19_5">
+  <inertial>
+    <origin xyz="-0.00028751436670929054 -0.07500004061951349 0.0007138143203527913" rpy="0 0 0"/>
+    <mass value="0.7360371753107763"/>
+    <inertia ixx="0.0017" iyy="0.00204" izz="0.0031" ixy="0.0" iyz="-0.0" ixz="-0.000673"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.075832 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/19_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.075832 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/19_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="20_5">
+  <inertial>
+    <origin xyz="-0.0007031100746910796 -0.07500004061951349 0.00030250539749119773" rpy="0 0 0"/>
+    <mass value="0.7362464663862833"/>
+    <inertia ixx="0.003063" iyy="0.00204" izz="0.001738" ixy="0.0" iyz="0.0" ixz="-0.00071"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.075832 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/20_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.075832 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/20_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="16_4">
+  <inertial>
+    <origin xyz="-6.483270731383328e-08 -0.07500004061951349 2.2391036132683728e-07" rpy="0 0 0"/>
+    <mass value="3.040295996465602"/>
+    <inertia ixx="0.010642" iyy="0.009884" izz="0.010642" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.225352 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/16_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.225352 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/16_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="16_1">
+  <inertial>
+    <origin xyz="-6.483270723056656e-08 -0.07500004061951349 2.2391036132683728e-07" rpy="0 0 0"/>
+    <mass value="3.040295996465602"/>
+    <inertia ixx="0.010642" iyy="0.009884" izz="0.010642" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.07476 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/16_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.07476 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/16_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="16_2">
+  <inertial>
+    <origin xyz="-6.483270720226888e-08 -0.07500004061951349 2.2391036132683728e-07" rpy="0 0 0"/>
+    <mass value="3.040295996465602"/>
+    <inertia ixx="0.010642" iyy="0.009884" izz="0.010642" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.000536 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/16_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.000536 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/16_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="16_5">
+  <inertial>
+    <origin xyz="-6.483270720281098e-08 -0.07500004061951349 2.2391036132683728e-07" rpy="0 0 0"/>
+    <mass value="3.040295996465602"/>
+    <inertia ixx="0.010642" iyy="0.009884" izz="0.010642" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.075832 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/16_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.075832 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/16_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="23_3">
+  <inertial>
+    <origin xyz="0.0002959415388201214 0.07499995938048612 0.0007103075222269252" rpy="0 0 0"/>
+    <mass value="0.7360371753107711"/>
+    <inertia ixx="0.001716" iyy="0.00204" izz="0.003084" ixy="0.0" iyz="-0.0" ixz="0.00069"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.075832 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/23_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.075832 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/23_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="22_3">
+  <inertial>
+    <origin xyz="0.0006848687305466561 0.07499995938048651 0.0003193454866786752" rpy="0 0 0"/>
+    <mass value="0.7367843289191649"/>
+    <inertia ixx="0.003082" iyy="0.002042" izz="0.001722" ixy="0.0" iyz="-0.0" ixz="0.000695"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.075832 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/22_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.075832 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/22_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="24_3">
+  <inertial>
+    <origin xyz="-0.00028751436670929054 0.07499995938048651 0.0007138143203528017" rpy="0 0 0"/>
+    <mass value="0.7360371753107762"/>
+    <inertia ixx="0.0017" iyy="0.00204" izz="0.0031" ixy="0.0" iyz="0.0" ixz="-0.000673"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.075832 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/24_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.075832 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/24_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="25_3">
+  <inertial>
+    <origin xyz="-0.0007031100746910796 0.07499995938048659 0.00030250539749122896" rpy="0 0 0"/>
+    <mass value="0.7362464663862832"/>
+    <inertia ixx="0.003063" iyy="0.00204" izz="0.001738" ixy="0.0" iyz="-0.0" ixz="-0.00071"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.075832 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/25_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.075832 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/25_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="23_2">
+  <inertial>
+    <origin xyz="0.0002959415388199924 0.07499995938048612 0.0007103075222269252" rpy="0 0 0"/>
+    <mass value="0.7360371753107711"/>
+    <inertia ixx="0.001716" iyy="0.00204" izz="0.003084" ixy="0.0" iyz="-0.0" ixz="0.00069"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.000536 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/23_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.000536 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/23_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="24_2">
+  <inertial>
+    <origin xyz="-0.0002875143667092741 0.07499995938048651 0.0007138143203528017" rpy="0 0 0"/>
+    <mass value="0.7360371753107762"/>
+    <inertia ixx="0.0017" iyy="0.00204" izz="0.0031" ixy="-0.0" iyz="0.0" ixz="-0.000673"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.000536 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/24_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.000536 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/24_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="22_2">
+  <inertial>
+    <origin xyz="0.0006848687305466507 0.07499995938048651 0.0003193454866786752" rpy="0 0 0"/>
+    <mass value="0.7367843289191649"/>
+    <inertia ixx="0.003082" iyy="0.002042" izz="0.001722" ixy="0.0" iyz="-0.0" ixz="0.000695"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.000536 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/22_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.000536 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/22_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="25_2">
+  <inertial>
+    <origin xyz="-0.0007031100746914976 0.07499995938048659 0.00030250539749122896" rpy="0 0 0"/>
+    <mass value="0.7362464663862832"/>
+    <inertia ixx="0.003063" iyy="0.00204" izz="0.001738" ixy="-0.0" iyz="-0.0" ixz="-0.00071"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.000536 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/25_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.000536 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/25_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="23_1">
+  <inertial>
+    <origin xyz="0.00029594153881996876 0.07499995938048612 0.0007103075222269252" rpy="0 0 0"/>
+    <mass value="0.7360371753107711"/>
+    <inertia ixx="0.001716" iyy="0.00204" izz="0.003084" ixy="-0.0" iyz="-0.0" ixz="0.00069"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.07476 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/23_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.07476 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/23_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="22_1">
+  <inertial>
+    <origin xyz="0.0006848687305466283 0.07499995938048651 0.0003193454866786752" rpy="0 0 0"/>
+    <mass value="0.7367843289191649"/>
+    <inertia ixx="0.003082" iyy="0.002042" izz="0.001722" ixy="0.0" iyz="-0.0" ixz="0.000695"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.07476 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/22_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.07476 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/22_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="24_1">
+  <inertial>
+    <origin xyz="-0.0002875143667093044 0.07499995938048651 0.0007138143203528017" rpy="0 0 0"/>
+    <mass value="0.7360371753107762"/>
+    <inertia ixx="0.0017" iyy="0.00204" izz="0.0031" ixy="-0.0" iyz="0.0" ixz="-0.000673"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.07476 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/24_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.07476 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/24_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="25_1">
+  <inertial>
+    <origin xyz="-0.0007031100746912461 0.07499995938048659 0.00030250539749122896" rpy="0 0 0"/>
+    <mass value="0.7362464663862832"/>
+    <inertia ixx="0.003063" iyy="0.00204" izz="0.001738" ixy="-0.0" iyz="-0.0" ixz="-0.00071"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.07476 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/25_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.07476 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/25_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="23_4">
+  <inertial>
+    <origin xyz="0.00029594153881998264 0.07499995938048612 0.0007103075222269252" rpy="0 0 0"/>
+    <mass value="0.7360371753107711"/>
+    <inertia ixx="0.001716" iyy="0.00204" izz="0.003084" ixy="0.0" iyz="-0.0" ixz="0.00069"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.150056 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/23_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.150056 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/23_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="24_4">
+  <inertial>
+    <origin xyz="-0.00028751436670929054 0.07499995938048651 0.0007138143203528017" rpy="0 0 0"/>
+    <mass value="0.7360371753107762"/>
+    <inertia ixx="0.0017" iyy="0.00204" izz="0.0031" ixy="-0.0" iyz="0.0" ixz="-0.000673"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.150056 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/24_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.150056 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/24_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="22_4">
+  <inertial>
+    <origin xyz="0.0006848687305466283 0.07499995938048651 0.0003193454866786752" rpy="0 0 0"/>
+    <mass value="0.7367843289191649"/>
+    <inertia ixx="0.003082" iyy="0.002042" izz="0.001722" ixy="0.0" iyz="-0.0" ixz="0.000695"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.150056 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/22_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.150056 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/22_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="25_4">
+  <inertial>
+    <origin xyz="-0.0007031100746913987 0.07499995938048659 0.00030250539749122896" rpy="0 0 0"/>
+    <mass value="0.7362464663862832"/>
+    <inertia ixx="0.003063" iyy="0.00204" izz="0.001738" ixy="0.0" iyz="-0.0" ixz="-0.00071"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.150056 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/25_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.150056 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/25_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="23_5">
+  <inertial>
+    <origin xyz="0.00029594153881998264 0.07499995938048612 0.0007103075222269252" rpy="0 0 0"/>
+    <mass value="0.7360371753107711"/>
+    <inertia ixx="0.001716" iyy="0.00204" izz="0.003084" ixy="0.0" iyz="-0.0" ixz="0.00069"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.225352 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/23_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.225352 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/23_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="22_5">
+  <inertial>
+    <origin xyz="0.0006848687305466283 0.07499995938048651 0.0003193454866786752" rpy="0 0 0"/>
+    <mass value="0.7367843289191649"/>
+    <inertia ixx="0.003082" iyy="0.002042" izz="0.001722" ixy="-0.0" iyz="-0.0" ixz="0.000695"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.225352 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/22_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.225352 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/22_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="24_5">
+  <inertial>
+    <origin xyz="-0.00028751436670929054 0.07499995938048651 0.0007138143203528017" rpy="0 0 0"/>
+    <mass value="0.7360371753107762"/>
+    <inertia ixx="0.0017" iyy="0.00204" izz="0.0031" ixy="-0.0" iyz="0.0" ixz="-0.000673"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.225352 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/24_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.225352 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/24_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="25_5">
+  <inertial>
+    <origin xyz="-0.00070311007469126 0.07499995938048659 0.00030250539749122896" rpy="0 0 0"/>
+    <mass value="0.7362464663862832"/>
+    <inertia ixx="0.003063" iyy="0.00204" izz="0.001738" ixy="-0.0" iyz="-0.0" ixz="-0.00071"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.225352 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/25_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.225352 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/25_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="21_3">
+  <inertial>
+    <origin xyz="-6.483270720281098e-08 0.07499995938048651 2.239103613198984e-07" rpy="0 0 0"/>
+    <mass value="3.040295996465602"/>
+    <inertia ixx="0.010642" iyy="0.009884" izz="0.010642" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.075832 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/21_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.075832 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/21_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="21_2">
+  <inertial>
+    <origin xyz="-6.483270720226888e-08 0.07499995938048651 2.239103613198984e-07" rpy="0 0 0"/>
+    <mass value="3.040295996465602"/>
+    <inertia ixx="0.010642" iyy="0.009884" izz="0.010642" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.000536 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/21_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.000536 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/21_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="21_1">
+  <inertial>
+    <origin xyz="-6.483270723056656e-08 0.07499995938048651 2.239103613198984e-07" rpy="0 0 0"/>
+    <mass value="3.040295996465602"/>
+    <inertia ixx="0.010642" iyy="0.009884" izz="0.010642" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.07476 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/21_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.07476 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/21_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="21_4">
+  <inertial>
+    <origin xyz="-6.483270723056656e-08 0.07499995938048651 2.239103613198984e-07" rpy="0 0 0"/>
+    <mass value="3.040295996465602"/>
+    <inertia ixx="0.010642" iyy="0.009884" izz="0.010642" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.150056 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/21_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.150056 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/21_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="21_5">
+  <inertial>
+    <origin xyz="-6.483270723056656e-08 0.07499995938048651 2.239103613198984e-07" rpy="0 0 0"/>
+    <mass value="3.040295996465602"/>
+    <inertia ixx="0.010642" iyy="0.009884" izz="0.010642" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.225352 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/21_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.225352 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/21_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="fl_1">
+  <inertial>
+    <origin xyz="-6.483279409164044e-08 -0.03909489022813641 0.1382007595513184" rpy="0 0 0"/>
+    <mass value="0.052061944901923785"/>
+    <inertia ixx="0.000425" iyy="0.00042" izz="6e-06" ixy="-0.0" iyz="7e-06" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.075832 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/fl_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.075832 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/fl_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="rr_1">
+  <inertial>
+    <origin xyz="-6.483279407776266e-08 -0.03909489022813606 0.1382007595513185" rpy="0 0 0"/>
+    <mass value="0.052061944901923785"/>
+    <inertia ixx="0.000425" iyy="0.00042" izz="6e-06" ixy="-0.0" iyz="7e-06" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.263 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/rr_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.263 -0.064412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/rr_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="fl_2">
+  <inertial>
+    <origin xyz="-6.483262846024296e-08 0.03909480898910889 0.13820075955131836" rpy="0 0 0"/>
+    <mass value="0.052061944901923785"/>
+    <inertia ixx="0.000425" iyy="0.00042" izz="6e-06" ixy="-0.0" iyz="-7e-06" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.075832 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/fl_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.075832 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/fl_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="fl_3">
+  <inertial>
+    <origin xyz="-6.483262848799853e-08 0.03909480898910889 0.13820075955131828" rpy="0 0 0"/>
+    <mass value="0.052061944901923785"/>
+    <inertia ixx="0.000425" iyy="0.00042" izz="6e-06" ixy="-0.0" iyz="-7e-06" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.263 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/fl_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.263 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/fl_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="18_3">
+  <inertial>
+    <origin xyz="0.00029594153882017693 -0.0750000406195136 0.0007103075222269859" rpy="0 0 0"/>
+    <mass value="0.7360371753107705"/>
+    <inertia ixx="0.001716" iyy="0.00204" izz="0.003084" ixy="0.0" iyz="0.0" ixz="0.00069"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.150056 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/18_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.150056 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/18_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="20_3">
+  <inertial>
+    <origin xyz="-0.0007031100746912322 -0.07500004061951415 0.00030250539749123763" rpy="0 0 0"/>
+    <mass value="0.7362464663862833"/>
+    <inertia ixx="0.003063" iyy="0.00204" izz="0.001738" ixy="-0.0" iyz="0.0" ixz="-0.00071"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.150056 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/20_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.150056 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/20_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="17_7">
+  <inertial>
+    <origin xyz="0.0006848687305466283 -0.07500004061951349 0.00031934548667866824" rpy="0 0 0"/>
+    <mass value="0.7367843289191651"/>
+    <inertia ixx="0.003082" iyy="0.002042" izz="0.001722" ixy="-0.0" iyz="-0.0" ixz="0.000695"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.150056 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/17_7.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.150056 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/17_7.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="16_3">
+  <inertial>
+    <origin xyz="-6.483270731383328e-08 -0.07500004061951338 2.2391036132336783e-07" rpy="0 0 0"/>
+    <mass value="3.040295996465602"/>
+    <inertia ixx="0.010642" iyy="0.009884" izz="0.010642" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.150056 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/16_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.150056 -0.424412 -0.011852" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_imax10_description/meshes/16_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="1" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="6_1"/>
+  <child link="7_1"/>
+</joint>
+
+<joint name="2" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="6_1"/>
+  <child link="9_1"/>
+</joint>
+
+<joint name="3" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="6_1"/>
+  <child link="10_1"/>
+</joint>
+
+<joint name="4" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="6_1"/>
+  <child link="8_1"/>
+</joint>
+
+<joint name="6" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="6_2"/>
+  <child link="8_2"/>
+</joint>
+
+<joint name="7" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="6_2"/>
+  <child link="9_2"/>
+</joint>
+
+<joint name="8" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="9_2"/>
+  <child link="10_2"/>
+</joint>
+
+<joint name="9" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="6_2"/>
+  <child link="7_2"/>
+</joint>
+
+<joint name="11" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="11_1"/>
+  <child link="15_1"/>
+</joint>
+
+<joint name="12" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="11_1"/>
+  <child link="12_1"/>
+</joint>
+
+<joint name="13" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="11_1"/>
+  <child link="13_1"/>
+</joint>
+
+<joint name="14" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="12_1"/>
+  <child link="14_1"/>
+</joint>
+
+<joint name="15" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="11_2"/>
+  <child link="14_2"/>
+</joint>
+
+<joint name="16" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="11_2"/>
+  <child link="12_2"/>
+</joint>
+
+<joint name="17" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="12_2"/>
+  <child link="13_2"/>
+</joint>
+
+<joint name="18" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="12_2"/>
+  <child link="15_2"/>
+</joint>
+
+<joint name="20" type="continuous">
+  <origin xyz="-0.263 0.064412 0.011852" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="6_1"/>
+  <axis xyz="-0.0 -1.0 -0.0"/>
+</joint>
+
+<joint name="21" type="continuous">
+  <origin xyz="-0.263 0.424412 0.011852" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="11_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="22" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="6_5"/>
+  <child link="8_5"/>
+</joint>
+
+<joint name="26" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="8_5"/>
+  <child link="9_5"/>
+</joint>
+
+<joint name="27" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="8_5"/>
+  <child link="7_5"/>
+</joint>
+
+<joint name="28" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="9_5"/>
+  <child link="10_5"/>
+</joint>
+
+<joint name="29" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="6_4"/>
+  <child link="10_4"/>
+</joint>
+
+<joint name="30" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="6_4"/>
+  <child link="7_4"/>
+</joint>
+
+<joint name="31" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="7_4"/>
+  <child link="8_4"/>
+</joint>
+
+<joint name="32" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="10_4"/>
+  <child link="9_4"/>
+</joint>
+
+<joint name="33" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="6_3"/>
+  <child link="7_3"/>
+</joint>
+
+<joint name="34" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="7_3"/>
+  <child link="9_3"/>
+</joint>
+
+<joint name="35" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="9_3"/>
+  <child link="8_3"/>
+</joint>
+
+<joint name="36" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="9_3"/>
+  <child link="10_3"/>
+</joint>
+
+<joint name="37" type="continuous">
+  <origin xyz="-0.187704 0.064412 0.011852" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="6_2"/>
+  <axis xyz="-0.0 -1.0 -0.0"/>
+</joint>
+
+<joint name="38" type="continuous">
+  <origin xyz="-0.112408 0.064412 0.011852" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="6_3"/>
+  <axis xyz="-0.0 -1.0 -0.0"/>
+</joint>
+
+<joint name="39" type="continuous">
+  <origin xyz="-0.037112 0.064412 0.011852" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="6_4"/>
+  <axis xyz="-0.0 -1.0 -0.0"/>
+</joint>
+
+<joint name="40" type="continuous">
+  <origin xyz="0.038184 0.064412 0.011852" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="6_5"/>
+  <axis xyz="-0.0 -1.0 -0.0"/>
+</joint>
+
+<joint name="41" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="11_4"/>
+  <child link="14_4"/>
+</joint>
+
+<joint name="42" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="14_4"/>
+  <child link="15_4"/>
+</joint>
+
+<joint name="43" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="15_4"/>
+  <child link="12_4"/>
+</joint>
+
+<joint name="44" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="14_4"/>
+  <child link="13_4"/>
+</joint>
+
+<joint name="45" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="11_5"/>
+  <child link="12_5"/>
+</joint>
+
+<joint name="46" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="11_5"/>
+  <child link="14_5"/>
+</joint>
+
+<joint name="47" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="12_5"/>
+  <child link="13_5"/>
+</joint>
+
+<joint name="48" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="11_5"/>
+  <child link="15_5"/>
+</joint>
+
+<joint name="49" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="11_3"/>
+  <child link="15_3"/>
+</joint>
+
+<joint name="50" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="15_3"/>
+  <child link="12_3"/>
+</joint>
+
+<joint name="51" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="12_3"/>
+  <child link="14_3"/>
+</joint>
+
+<joint name="52" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="14_3"/>
+  <child link="13_3"/>
+</joint>
+
+<joint name="53" type="continuous">
+  <origin xyz="-0.187704 0.424412 0.011852" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="11_4"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="54" type="continuous">
+  <origin xyz="-0.112408 0.424412 0.011852" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="11_5"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="55" type="continuous">
+  <origin xyz="-0.037112 0.424412 0.011852" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="11_3"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="56" type="continuous">
+  <origin xyz="0.038184 0.424412 0.011852" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="11_2"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="57" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="16_4"/>
+  <child link="18_4"/>
+</joint>
+
+<joint name="58" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="16_4"/>
+  <child link="17_4"/>
+</joint>
+
+<joint name="59" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="17_4"/>
+  <child link="20_4"/>
+</joint>
+
+<joint name="60" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="18_4"/>
+  <child link="19_4"/>
+</joint>
+
+<joint name="63" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="16_3"/>
+  <child link="19_3"/>
+</joint>
+
+<joint name="65" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="16_1"/>
+  <child link="18_1"/>
+</joint>
+
+<joint name="66" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="18_1"/>
+  <child link="17_1"/>
+</joint>
+
+<joint name="67" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="18_1"/>
+  <child link="19_1"/>
+</joint>
+
+<joint name="68" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="17_1"/>
+  <child link="20_1"/>
+</joint>
+
+<joint name="69" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="16_2"/>
+  <child link="18_2"/>
+</joint>
+
+<joint name="70" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="18_2"/>
+  <child link="19_2"/>
+</joint>
+
+<joint name="71" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="16_2"/>
+  <child link="20_2"/>
+</joint>
+
+<joint name="72" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="16_2"/>
+  <child link="17_2"/>
+</joint>
+
+<joint name="73" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="16_5"/>
+  <child link="18_5"/>
+</joint>
+
+<joint name="74" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="18_5"/>
+  <child link="17_5"/>
+</joint>
+
+<joint name="75" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="16_5"/>
+  <child link="19_5"/>
+</joint>
+
+<joint name="76" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="18_5"/>
+  <child link="20_5"/>
+</joint>
+
+<joint name="77" type="continuous">
+  <origin xyz="-0.225352 0.424412 0.011852" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="16_4"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="79" type="continuous">
+  <origin xyz="-0.07476 0.424412 0.011852" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="16_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="80" type="continuous">
+  <origin xyz="0.000536 0.424412 0.011852" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="16_2"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="81" type="continuous">
+  <origin xyz="0.075832 0.424412 0.011852" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="16_5"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="82" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="21_3"/>
+  <child link="23_3"/>
+</joint>
+
+<joint name="83" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="21_3"/>
+  <child link="22_3"/>
+</joint>
+
+<joint name="84" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="21_3"/>
+  <child link="24_3"/>
+</joint>
+
+<joint name="85" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="21_3"/>
+  <child link="25_3"/>
+</joint>
+
+<joint name="86" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="21_2"/>
+  <child link="23_2"/>
+</joint>
+
+<joint name="87" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="21_2"/>
+  <child link="24_2"/>
+</joint>
+
+<joint name="88" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="23_2"/>
+  <child link="22_2"/>
+</joint>
+
+<joint name="89" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="22_2"/>
+  <child link="25_2"/>
+</joint>
+
+<joint name="90" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="21_1"/>
+  <child link="23_1"/>
+</joint>
+
+<joint name="91" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="23_1"/>
+  <child link="22_1"/>
+</joint>
+
+<joint name="92" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="21_1"/>
+  <child link="24_1"/>
+</joint>
+
+<joint name="93" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="22_1"/>
+  <child link="25_1"/>
+</joint>
+
+<joint name="94" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="21_4"/>
+  <child link="23_4"/>
+</joint>
+
+<joint name="95" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="21_4"/>
+  <child link="24_4"/>
+</joint>
+
+<joint name="96" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="21_4"/>
+  <child link="22_4"/>
+</joint>
+
+<joint name="97" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="21_4"/>
+  <child link="25_4"/>
+</joint>
+
+<joint name="98" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="21_5"/>
+  <child link="23_5"/>
+</joint>
+
+<joint name="99" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="21_5"/>
+  <child link="22_5"/>
+</joint>
+
+<joint name="100" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="21_5"/>
+  <child link="24_5"/>
+</joint>
+
+<joint name="101" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="21_5"/>
+  <child link="25_5"/>
+</joint>
+
+<joint name="102" type="continuous">
+  <origin xyz="0.075832 0.064412 0.011852" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="21_3"/>
+  <axis xyz="-0.0 -1.0 -0.0"/>
+</joint>
+
+<joint name="103" type="continuous">
+  <origin xyz="0.000536 0.064412 0.011852" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="21_2"/>
+  <axis xyz="-0.0 -1.0 -0.0"/>
+</joint>
+
+<joint name="104" type="continuous">
+  <origin xyz="-0.07476 0.064412 0.011852" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="21_1"/>
+  <axis xyz="-0.0 -1.0 -0.0"/>
+</joint>
+
+<joint name="105" type="continuous">
+  <origin xyz="-0.150056 0.064412 0.011852" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="21_4"/>
+  <axis xyz="-0.0 -1.0 -0.0"/>
+</joint>
+
+<joint name="106" type="continuous">
+  <origin xyz="-0.225352 0.064412 0.011852" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="21_5"/>
+  <axis xyz="-0.0 -1.0 -0.0"/>
+</joint>
+
+<joint name="108" type="continuous">
+  <origin xyz="0.075832 0.064412 0.011852" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="fl_1"/>
+  <axis xyz="-0.0 -1.0 -0.0"/>
+</joint>
+
+<joint name="109" type="continuous">
+  <origin xyz="-0.263 0.064412 0.011852" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="rr_1"/>
+  <axis xyz="-0.0 -1.0 -0.0"/>
+</joint>
+
+<joint name="110" type="continuous">
+  <origin xyz="0.075832 0.424412 0.011852" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="fl_2"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="111" type="continuous">
+  <origin xyz="-0.263 0.424412 0.011852" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="fl_3"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="112" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="16_3"/>
+  <child link="18_3"/>
+</joint>
+
+<joint name="113" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="18_3"/>
+  <child link="20_3"/>
+</joint>
+
+<joint name="114" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="16_3"/>
+  <child link="17_7"/>
+</joint>
+
+<joint name="115" type="continuous">
+  <origin xyz="-0.150056 0.424412 0.011852" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="16_3"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+</robot>

@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<robot name="prismatic_experiment" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+
+<transmission name="スライダ 3_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="スライダ 3">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="スライダ 3_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="スライダ 6_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="スライダ 6">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="スライダ 6_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="スライダ 9_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="スライダ 9">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="スライダ 9_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="スライダ 12_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="スライダ 12">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="スライダ 12_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+</robot>

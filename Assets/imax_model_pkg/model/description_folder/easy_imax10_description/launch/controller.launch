@@ -1,0 +1,9 @@
+<launch>
+
+<rosparam file="$(find easy_imax10_description)/launch/controller.yaml" command="load"/>
+<node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen" ns="easy_imax10" args="20_position_controller 21_position_controller 37_position_controller 38_position_controller 39_position_controller 40_position_controller 53_position_controller 54_position_controller 55_position_controller 56_position_controller 77_position_controller 79_position_controller 80_position_controller 81_position_controller 102_position_controller 103_position_controller 104_position_controller 105_position_controller 106_position_controller 108_position_controller 109_position_controller 110_position_controller 111_position_controller 115_position_controller joint_state_controller "/>
+<node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="false" output="screen">
+  <remap from="/joint_states" to="/easy_imax10/joint_states"/>
+</node>
+
+</launch>

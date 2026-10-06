@@ -1,0 +1,190 @@
+<?xml version="1.0" ?>
+<robot name="gear_check" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find gear_check_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find gear_check_description)/urdf/gear_check.trans" />
+<xacro:include filename="$(find gear_check_description)/urdf/gear_check.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="0.1694160000000001 6.013399387320873e-17 1.879187308537773e-18" rpy="0 0 0"/>
+    <mass value="1.2099574875277086"/>
+    <inertia ixx="0.012249" iyy="0.014034" izz="0.02622" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://gear_check_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://gear_check_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="geart_1">
+  <inertial>
+    <origin xyz="4.1466829969749597e-14 0.07500000000000002 7.639765913131415e-17" rpy="0 0 0"/>
+    <mass value="2.380949134081888"/>
+    <inertia ixx="0.008464" iyy="0.007999" izz="0.008464" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.150592 0.18 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://gear_check_description/meshes/geart_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.150592 0.18 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://gear_check_description/meshes/geart_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="geartyok_1">
+  <inertial>
+    <origin xyz="3.58046925441613e-14 0.07499999999999997 0.0" rpy="0 0 0"/>
+    <mass value="2.754530739710083"/>
+    <inertia ixx="0.009962" iyy="0.009594" izz="0.009962" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.18824 0.18 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://gear_check_description/meshes/geartyok_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.18824 0.18 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://gear_check_description/meshes/geartyok_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="geartyokk_1">
+  <inertial>
+    <origin xyz="5.162537064506978e-15 0.07500000000000001 7.528019646738304e-17" rpy="0 0 0"/>
+    <mass value="2.416292051434772"/>
+    <inertia ixx="0.008531" iyy="0.008001" izz="0.008531" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.301184 0.18 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://gear_check_description/meshes/geartyokk_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.301184 0.18 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://gear_check_description/meshes/geartyokk_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="gearnaname_1">
+  <inertial>
+    <origin xyz="7.493221873409896e-05 0.075 4.462749146274174e-05" rpy="0 0 0"/>
+    <mass value="3.022850628302408"/>
+    <inertia ixx="0.011052" iyy="0.010793" izz="0.011077" ixy="0.0" iyz="-0.0" ixz="-2.7e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 0.18 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://gear_check_description/meshes/gearnaname_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 0.18 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://gear_check_description/meshes/gearnaname_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="gear_mainc_1">
+  <inertial>
+    <origin xyz="-1.3877787807814457e-17 0.07499999999999997 3.4007440022514314e-17" rpy="0 0 0"/>
+    <mass value="1.6046395162425733"/>
+    <inertia ixx="0.005485" iyy="0.004952" izz="0.005485" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.075296 0.18 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://gear_check_description/meshes/gear_mainc_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.075296 0.18 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://gear_check_description/meshes/gear_mainc_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="gear_maint_1">
+  <inertial>
+    <origin xyz="6.147859998861804e-14 0.075 1.1335813340838095e-17" rpy="0 0 0"/>
+    <mass value="1.604639516242575"/>
+    <inertia ixx="0.005485" iyy="0.004952" izz="0.005485" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.225888 0.18 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://gear_check_description/meshes/gear_maint_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.225888 0.18 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://gear_check_description/meshes/gear_maint_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="2" type="fixed">
+  <origin xyz="0.150592 -0.18 0.0" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="geart_1"/>
+</joint>
+
+<joint name="3" type="fixed">
+  <origin xyz="0.18824 -0.18 0.0" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="geartyok_1"/>
+</joint>
+
+<joint name="4" type="fixed">
+  <origin xyz="0.301184 -0.18 0.0" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="geartyokk_1"/>
+</joint>
+
+<joint name="1" type="fixed">
+  <origin xyz="0.0 -0.18 0.0" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="gearnaname_1"/>
+</joint>
+
+<joint name="5" type="fixed">
+  <origin xyz="0.075296 -0.18 0.0" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="gear_mainc_1"/>
+</joint>
+
+<joint name="6" type="fixed">
+  <origin xyz="0.225888 -0.18 0.0" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="gear_maint_1"/>
+</joint>
+
+</robot>

@@ -1,0 +1,271 @@
+easy_lex4_controller:
+  # Publish all joint states -----------------------------------
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50
+
+  # Position Controllers --------------------------------------
+  ‰ñ“] 86_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ‰ñ“] 86
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ‰ñ“] 87_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ‰ñ“] 87
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ‰ñ“] 88_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ‰ñ“] 88
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ‰ñ“] 89_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ‰ñ“] 89
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ‰ñ“] 90_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ‰ñ“] 90
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ‰ñ“] 91_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ‰ñ“] 91
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ‰ñ“] 92_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ‰ñ“] 92
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ‰ñ“] 93_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ‰ñ“] 93
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ‰ñ“] 94_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ‰ñ“] 94
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ‰ñ“] 113_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ‰ñ“] 113
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ‰ñ“] 114_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ‰ñ“] 114
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ‰ñ“] 115_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ‰ñ“] 115
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ‰ñ“] 116_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ‰ñ“] 116
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ‰ñ“] 117_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ‰ñ“] 117
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ‰ñ“] 118_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ‰ñ“] 118
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ‰ñ“] 119_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ‰ñ“] 119
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ‰ñ“] 120_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ‰ñ“] 120
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ‰ñ“] 121_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ‰ñ“] 121
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ‰ñ“] 158_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ‰ñ“] 158
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ‰ñ“] 159_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ‰ñ“] 159
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ‰ñ“] 160_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ‰ñ“] 160
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ‰ñ“] 161_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ‰ñ“] 161
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ‰ñ“] 162_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ‰ñ“] 162
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ‰ñ“] 163_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ‰ñ“] 163
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ‰ñ“] 164_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ‰ñ“] 164
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ‰ñ“] 165_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ‰ñ“] 165
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ‰ñ“] 166_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ‰ñ“] 166
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ‰ñ“] 185_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ‰ñ“] 185
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ‰ñ“] 186_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ‰ñ“] 186
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ‰ñ“] 187_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ‰ñ“] 187
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ‰ñ“] 188_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ‰ñ“] 188
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ‰ñ“] 189_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ‰ñ“] 189
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ‰ñ“] 190_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ‰ñ“] 190
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ‰ñ“] 191_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ‰ñ“] 191
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ‰ñ“] 192_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ‰ñ“] 192
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ‰ñ“] 193_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ‰ñ“] 193
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ‰ñ“] 278_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ‰ñ“] 278
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ‰ñ“] 281_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ‰ñ“] 281
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ‰ñ“] 284_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ‰ñ“] 284
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ‰ñ“] 287_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ‰ñ“] 287
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ‰ñ“] 290_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ‰ñ“] 290
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ‰ñ“] 293_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ‰ñ“] 293
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ‰ñ“] 296_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ‰ñ“] 296
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ‰ñ“] 299_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ‰ñ“] 299
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ‰ñ“] 302_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ‰ñ“] 302
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ‰ñ“] 305_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ‰ñ“] 305
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ‰ñ“] 308_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ‰ñ“] 308
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ‰ñ“] 311_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ‰ñ“] 311
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ‰ñ“] 314_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ‰ñ“] 314
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ‰ñ“] 317_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ‰ñ“] 317
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ‰ñ“] 320_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ‰ñ“] 320
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ‰ñ“] 323_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ‰ñ“] 323
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ‰ñ“] 326_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ‰ñ“] 326
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ‰ñ“] 329_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ‰ñ“] 329
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ‰ñ“] 332_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ‰ñ“] 332
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ‰ñ“] 335_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ‰ñ“] 335
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ‰ñ“] 338_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ‰ñ“] 338
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ‰ñ“] 341_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ‰ñ“] 341
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ‰ñ“] 344_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ‰ñ“] 344
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ‰ñ“] 347_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ‰ñ“] 347
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ‰ñ“] 350_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ‰ñ“] 350
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ‰ñ“] 353_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ‰ñ“] 353
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ‰ñ“] 354_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ‰ñ“] 354
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ‰ñ“] 355_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ‰ñ“] 355
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ‰ñ“] 356_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ‰ñ“] 356
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ‰ñ“] 357_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ‰ñ“] 357
+    pid: {p: 100.0, i: 0.01, d: 10.0}

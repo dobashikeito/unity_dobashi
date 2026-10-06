@@ -1,0 +1,1540 @@
+<?xml version="1.0" ?>
+<robot name="easy_j1" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find easy_j1_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find easy_j1_description)/urdf/easy_j1.trans" />
+<xacro:include filename="$(find easy_j1_description)/urdf/easy_j1.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="0.18824000000000002 8.395296854792174e-17 4.197648427396087e-18" rpy="0 0 0"/>
+    <mass value="1.0833383470577025"/>
+    <inertia ixx="0.004576" iyy="0.014873" izz="0.019388" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="gear_ou_1">
+  <inertial>
+    <origin xyz="1.911870673115013e-06 0.04999999999999999 -1.711881432260235e-05" rpy="0 0 0"/>
+    <mass value="2.261142306483083"/>
+    <inertia ixx="0.006104" iyy="0.008446" izz="0.006111" ixy="0.0" iyz="-0.0" ixz="-4e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 0.125 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_ou_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 0.125 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_ou_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="gear_ou_2">
+  <inertial>
+    <origin xyz="1.9118706731241497e-06 0.04999999999999999 -1.711881432260235e-05" rpy="0 0 0"/>
+    <mass value="2.261142306483083"/>
+    <inertia ixx="0.006104" iyy="0.008446" izz="0.006111" ixy="0.0" iyz="-0.0" ixz="-4e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.075296 0.125 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_ou_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.075296 0.125 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_ou_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="gear_ou_3">
+  <inertial>
+    <origin xyz="1.9118706731380275e-06 0.04999999999999999 -1.711881432260235e-05" rpy="0 0 0"/>
+    <mass value="2.261142306483083"/>
+    <inertia ixx="0.006104" iyy="0.008446" izz="0.006111" ixy="0.0" iyz="-0.0" ixz="-4e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.150592 0.125 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_ou_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.150592 0.125 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_ou_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="gear_ou_5">
+  <inertial>
+    <origin xyz="1.9118706731380275e-06 0.04999999999999999 -1.711881432260235e-05" rpy="0 0 0"/>
+    <mass value="2.261142306483083"/>
+    <inertia ixx="0.006104" iyy="0.008446" izz="0.006111" ixy="-0.0" iyz="-0.0" ixz="-4e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.225888 0.125 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_ou_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.225888 0.125 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_ou_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="gear_ou_4">
+  <inertial>
+    <origin xyz="1.9118706732212942e-06 0.04999999999999999 -1.711881432260235e-05" rpy="0 0 0"/>
+    <mass value="2.261142306483083"/>
+    <inertia ixx="0.006104" iyy="0.008446" izz="0.006111" ixy="-0.0" iyz="-0.0" ixz="-4e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.301184 0.125 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_ou_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.301184 0.125 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_ou_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="gear_ou_6">
+  <inertial>
+    <origin xyz="1.911870673110272e-06 0.04999999999999999 -1.7118814322600126e-05" rpy="0 0 0"/>
+    <mass value="2.261142306483083"/>
+    <inertia ixx="0.006104" iyy="0.008446" izz="0.006111" ixy="0.0" iyz="-0.0" ixz="-4e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.37648 0.125 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_ou_6.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.37648 0.125 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_ou_6.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="gear_totu_1">
+  <inertial>
+    <origin xyz="8.025821132975897e-06 0.05 -1.524123513452956e-05" rpy="0 0 0"/>
+    <mass value="2.261142306483082"/>
+    <inertia ixx="0.006107" iyy="0.008446" izz="0.006107" ixy="0.0" iyz="0.0" ixz="-5e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.037648 0.125 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_totu_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.037648 0.125 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_totu_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="gear_totu_2">
+  <inertial>
+    <origin xyz="8.025821132975897e-06 0.05 -1.524123513452956e-05" rpy="0 0 0"/>
+    <mass value="2.261142306483082"/>
+    <inertia ixx="0.006107" iyy="0.008446" izz="0.006107" ixy="0.0" iyz="0.0" ixz="-5e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.112944 0.125 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_totu_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.112944 0.125 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_totu_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="gear_totu_4">
+  <inertial>
+    <origin xyz="8.025821132962019e-06 0.05 -1.524123513452956e-05" rpy="0 0 0"/>
+    <mass value="2.261142306483082"/>
+    <inertia ixx="0.006107" iyy="0.008446" izz="0.006107" ixy="-0.0" iyz="0.0" ixz="-5e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.18824 0.125 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_totu_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.18824 0.125 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_totu_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="gear_totu_5">
+  <inertial>
+    <origin xyz="8.02582113301753e-06 0.05 -1.524123513452956e-05" rpy="0 0 0"/>
+    <mass value="2.261142306483082"/>
+    <inertia ixx="0.006107" iyy="0.008446" izz="0.006107" ixy="-0.0" iyz="0.0" ixz="-5e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.263536 0.125 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_totu_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.263536 0.125 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_totu_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="gear_totu_3">
+  <inertial>
+    <origin xyz="8.02582113301753e-06 0.05 -1.524123513452956e-05" rpy="0 0 0"/>
+    <mass value="2.261142306483082"/>
+    <inertia ixx="0.006107" iyy="0.008446" izz="0.006107" ixy="-0.0" iyz="0.0" ixz="-5e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.338832 0.125 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_totu_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.338832 0.125 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_totu_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="cgear_ou_1">
+  <inertial>
+    <origin xyz="1.9118706728093203e-06 -0.04999999999999999 -1.711881432260096e-05" rpy="0 0 0"/>
+    <mass value="2.261142306483083"/>
+    <inertia ixx="0.006104" iyy="0.008446" izz="0.006111" ixy="0.0" iyz="-0.0" ixz="-4e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.125 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/cgear_ou_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.125 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/cgear_ou_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="cgear_ou_2">
+  <inertial>
+    <origin xyz="1.9118706728188384e-06 -0.04999999999999999 -1.711881432260096e-05" rpy="0 0 0"/>
+    <mass value="2.261142306483083"/>
+    <inertia ixx="0.006104" iyy="0.008446" izz="0.006111" ixy="0.0" iyz="-0.0" ixz="-4e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.075296 -0.125 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/cgear_ou_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.075296 -0.125 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/cgear_ou_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="cgear_ou_3">
+  <inertial>
+    <origin xyz="1.911870672832716e-06 -0.04999999999999999 -1.711881432259874e-05" rpy="0 0 0"/>
+    <mass value="2.261142306483083"/>
+    <inertia ixx="0.006104" iyy="0.008446" izz="0.006111" ixy="0.0" iyz="-0.0" ixz="-4e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.37648 -0.125 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/cgear_ou_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.37648 -0.125 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/cgear_ou_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="cgear_ou_4">
+  <inertial>
+    <origin xyz="1.911870672777205e-06 -0.04999999999999999 -1.711881432260096e-05" rpy="0 0 0"/>
+    <mass value="2.261142306483083"/>
+    <inertia ixx="0.006104" iyy="0.008446" izz="0.006111" ixy="0.0" iyz="-0.0" ixz="-4e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.301184 -0.125 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/cgear_ou_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.301184 -0.125 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/cgear_ou_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="cgear_ou_5">
+  <inertial>
+    <origin xyz="1.911870672832716e-06 -0.04999999999999999 -1.711881432260096e-05" rpy="0 0 0"/>
+    <mass value="2.261142306483083"/>
+    <inertia ixx="0.006104" iyy="0.008446" izz="0.006111" ixy="0.0" iyz="-0.0" ixz="-4e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.225888 -0.125 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/cgear_ou_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.225888 -0.125 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/cgear_ou_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="cgear_ou_6">
+  <inertial>
+    <origin xyz="1.911870672832716e-06 -0.04999999999999999 -1.711881432260096e-05" rpy="0 0 0"/>
+    <mass value="2.261142306483083"/>
+    <inertia ixx="0.006104" iyy="0.008446" izz="0.006111" ixy="0.0" iyz="-0.0" ixz="-4e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.150592 -0.125 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/cgear_ou_6.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.150592 -0.125 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/cgear_ou_6.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="cgear_totu_1">
+  <inertial>
+    <origin xyz="8.025821132587319e-06 -0.05 -1.5241235134527131e-05" rpy="0 0 0"/>
+    <mass value="2.2611423064830816"/>
+    <inertia ixx="0.006107" iyy="0.008446" izz="0.006107" ixy="0.0" iyz="-0.0" ixz="-5e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.037648 -0.125 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/cgear_totu_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.037648 -0.125 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/cgear_totu_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="cgear_totu_2">
+  <inertial>
+    <origin xyz="8.025821132587319e-06 -0.04999999999999974 -1.5241235134527114e-05" rpy="0 0 0"/>
+    <mass value="2.2611423064830816"/>
+    <inertia ixx="0.006107" iyy="0.008446" izz="0.006107" ixy="0.0" iyz="-0.0" ixz="-5e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.112944 -0.125 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/cgear_totu_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.112944 -0.125 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/cgear_totu_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="cgear_totu_3">
+  <inertial>
+    <origin xyz="8.02582113257344e-06 -0.04999999999999996 -1.5241235134527131e-05" rpy="0 0 0"/>
+    <mass value="2.2611423064830816"/>
+    <inertia ixx="0.006107" iyy="0.008446" izz="0.006107" ixy="0.0" iyz="-0.0" ixz="-5e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.18824 -0.125 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/cgear_totu_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.18824 -0.125 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/cgear_totu_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="cgear_totu_4">
+  <inertial>
+    <origin xyz="8.02582113257344e-06 -0.04999999999999996 -1.5241235134527131e-05" rpy="0 0 0"/>
+    <mass value="2.2611423064830816"/>
+    <inertia ixx="0.006107" iyy="0.008446" izz="0.006107" ixy="0.0" iyz="-0.0" ixz="-5e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.263536 -0.125 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/cgear_totu_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.263536 -0.125 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/cgear_totu_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="cgear_totu_5">
+  <inertial>
+    <origin xyz="8.02582113257344e-06 -0.04999999999999996 -1.5241235134527131e-05" rpy="0 0 0"/>
+    <mass value="2.2611423064830816"/>
+    <inertia ixx="0.006107" iyy="0.008446" izz="0.006107" ixy="-0.0" iyz="-0.0" ixz="-5e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.338832 -0.125 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/cgear_totu_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.338832 -0.125 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/cgear_totu_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="rl_2">
+  <inertial>
+    <origin xyz="-8.282263763703668e-14 -0.039094849608622556 0.13820053564095713" rpy="0 0 0"/>
+    <mass value="0.052061944901923785"/>
+    <inertia ixx="0.000425" iyy="0.00042" izz="6e-06" ixy="-0.0" iyz="7e-06" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.37648 0.125 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/rl_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.37648 0.125 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/rl_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="rl_1">
+  <inertial>
+    <origin xyz="-8.281962889398128e-14 -0.039094849608622556 0.1382005356409572" rpy="0 0 0"/>
+    <mass value="0.052061944901923785"/>
+    <inertia ixx="0.000425" iyy="0.00042" izz="6e-06" ixy="-0.0" iyz="7e-06" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 0.125 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/rl_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 0.125 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/rl_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="rl_4">
+  <inertial>
+    <origin xyz="8.582742061152131e-14 0.039094849608622556 0.13820053564095708" rpy="0 0 0"/>
+    <mass value="0.052061944901923785"/>
+    <inertia ixx="0.000425" iyy="0.00042" izz="6e-06" ixy="-0.0" iyz="-7e-06" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.125 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/rl_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.125 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/rl_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="rl_3">
+  <inertial>
+    <origin xyz="8.609779555968089e-14 0.03909484960862261 0.13820053564095713" rpy="0 0 0"/>
+    <mass value="0.052061944901923785"/>
+    <inertia ixx="0.000425" iyy="0.00042" izz="6e-06" ixy="-0.0" iyz="-7e-06" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.37648 -0.125 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/rl_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.37648 -0.125 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/rl_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="gear_flat_f_1">
+  <inertial>
+    <origin xyz="1.946496241067748e-06 -0.020000000000000046 -1.7114911697742212e-05" rpy="0 0 0"/>
+    <mass value="0.9044569225918019"/>
+    <inertia ixx="0.001809" iyy="0.003379" izz="0.001811" ixy="-0.0" iyz="0.0" ixz="-1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.185 0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_flat_f_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.185 0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_flat_f_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="gear_flat_f_2">
+  <inertial>
+    <origin xyz="1.946496241064053e-06 -0.020000000000000046 -1.711491169778534e-05" rpy="0 0 0"/>
+    <mass value="0.9044569225918019"/>
+    <inertia ixx="0.001809" iyy="0.003379" izz="0.001811" ixy="-0.0" iyz="0.0" ixz="-1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.185 -0.07125" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_flat_f_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.185 -0.07125" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_flat_f_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="gear_flat_f_3">
+  <inertial>
+    <origin xyz="1.946496241028526e-06 -0.020000000000000046 -1.711491169784085e-05" rpy="0 0 0"/>
+    <mass value="0.9044569225918019"/>
+    <inertia ixx="0.001809" iyy="0.003379" izz="0.001811" ixy="-0.0" iyz="0.0" ixz="-1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.185 -0.1425" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_flat_f_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.185 -0.1425" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_flat_f_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="gear_flat_f_6">
+  <inertial>
+    <origin xyz="1.9464962410374077e-06 -0.020000000000000046 -1.7114911697924118e-05" rpy="0 0 0"/>
+    <mass value="0.9044569225918019"/>
+    <inertia ixx="0.001809" iyy="0.003379" izz="0.001811" ixy="-0.0" iyz="0.0" ixz="-1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.185 -0.21375" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_flat_f_6.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.185 -0.21375" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_flat_f_6.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="gear_flat_f_7">
+  <inertial>
+    <origin xyz="1.9464962410328976e-06 -0.020000000000000046 -1.711491169797963e-05" rpy="0 0 0"/>
+    <mass value="0.9044569225918019"/>
+    <inertia ixx="0.001809" iyy="0.003379" izz="0.001811" ixy="-0.0" iyz="0.0" ixz="-1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.185 -0.285" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_flat_f_7.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.185 -0.285" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_flat_f_7.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="gear_flat_f_11">
+  <inertial>
+    <origin xyz="1.9464962416337883e-06 -0.01999999999999988 -1.711491169773998e-05" rpy="0 0 0"/>
+    <mass value="0.9044569225918019"/>
+    <inertia ixx="0.001809" iyy="0.003379" izz="0.001811" ixy="0.0" iyz="0.0" ixz="-1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.37648 -0.185 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_flat_f_11.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.37648 -0.185 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_flat_f_11.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="gear_flat_f_10">
+  <inertial>
+    <origin xyz="1.9464962416337883e-06 -0.01999999999999988 -1.7114911697771462e-05" rpy="0 0 0"/>
+    <mass value="0.9044569225918019"/>
+    <inertia ixx="0.001809" iyy="0.003379" izz="0.001811" ixy="0.0" iyz="0.0" ixz="-1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.37648 -0.185 -0.07125" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_flat_f_10.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.37648 -0.185 -0.07125" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_flat_f_10.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="gear_flat_f_9">
+  <inertial>
+    <origin xyz="1.9464962416337883e-06 -0.01999999999999988 -1.711491169784085e-05" rpy="0 0 0"/>
+    <mass value="0.9044569225918019"/>
+    <inertia ixx="0.001809" iyy="0.003379" izz="0.001811" ixy="0.0" iyz="0.0" ixz="-1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.37648 -0.185 -0.1425" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_flat_f_9.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.37648 -0.185 -0.1425" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_flat_f_9.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="gear_flat_f_8">
+  <inertial>
+    <origin xyz="1.9464962414117437e-06 -0.01999999999999988 -1.7114911697868607e-05" rpy="0 0 0"/>
+    <mass value="0.9044569225918019"/>
+    <inertia ixx="0.001809" iyy="0.003379" izz="0.001811" ixy="0.0" iyz="0.0" ixz="-1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.37648 -0.185 -0.21375" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_flat_f_8.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.37648 -0.185 -0.21375" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_flat_f_8.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="gear_flat_f_5">
+  <inertial>
+    <origin xyz="1.946496241189699e-06 -0.01999999999999988 -1.7114911697868607e-05" rpy="0 0 0"/>
+    <mass value="0.9044569225918019"/>
+    <inertia ixx="0.001809" iyy="0.003379" izz="0.001811" ixy="0.0" iyz="0.0" ixz="-1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.37648 -0.185 -0.285" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_flat_f_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.37648 -0.185 -0.285" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_flat_f_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="gear_flat_f_19">
+  <inertial>
+    <origin xyz="-1.9464962368022713e-06 0.01999999999999999 -1.711491169774221e-05" rpy="0 0 0"/>
+    <mass value="0.9044569225918019"/>
+    <inertia ixx="0.001809" iyy="0.003379" izz="0.001811" ixy="-0.0" iyz="-0.0" ixz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 0.185 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_flat_f_19.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 0.185 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_flat_f_19.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="gear_flat_f_18">
+  <inertial>
+    <origin xyz="-1.946496236805359e-06 0.019999999999999934 -1.711491169772983e-05" rpy="0 0 0"/>
+    <mass value="0.9044569225918019"/>
+    <inertia ixx="0.001809" iyy="0.003379" izz="0.001811" ixy="-0.0" iyz="0.0" ixz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0 0.185 -0.07125" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_flat_f_18.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0 0.185 -0.07125" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_flat_f_18.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="gear_flat_f_17">
+  <inertial>
+    <origin xyz="-1.946496236803503e-06 0.01999999999999999 -1.711491169772983e-05" rpy="0 0 0"/>
+    <mass value="0.9044569225918019"/>
+    <inertia ixx="0.001809" iyy="0.003379" izz="0.001811" ixy="-0.0" iyz="-0.0" ixz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0 0.185 -0.1425" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_flat_f_17.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0 0.185 -0.1425" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_flat_f_17.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="gear_flat_f_16">
+  <inertial>
+    <origin xyz="-1.9464962368530988e-06 0.01999999999999999 -1.711491169778534e-05" rpy="0 0 0"/>
+    <mass value="0.9044569225918019"/>
+    <inertia ixx="0.001809" iyy="0.003379" izz="0.001811" ixy="-0.0" iyz="0.0" ixz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0 0.185 -0.21375" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_flat_f_16.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0 0.185 -0.21375" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_flat_f_16.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="gear_flat_f_15">
+  <inertial>
+    <origin xyz="-1.9464962368022713e-06 0.019999999999999934 -1.7114911697702073e-05" rpy="0 0 0"/>
+    <mass value="0.9044569225918019"/>
+    <inertia ixx="0.001809" iyy="0.003379" izz="0.001811" ixy="-0.0" iyz="-0.0" ixz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 0.185 -0.285" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_flat_f_15.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 0.185 -0.285" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_flat_f_15.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="gear_flat_f_13">
+  <inertial>
+    <origin xyz="-1.946496236748807e-06 0.019999999999999962 -1.711491169773998e-05" rpy="0 0 0"/>
+    <mass value="0.9044569225918019"/>
+    <inertia ixx="0.001809" iyy="0.003379" izz="0.001811" ixy="-0.0" iyz="-0.0" ixz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.37648 0.185 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_flat_f_13.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.37648 0.185 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_flat_f_13.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="gear_flat_f_14">
+  <inertial>
+    <origin xyz="-1.946496236804318e-06 0.01999999999999999 -1.7114911697771462e-05" rpy="0 0 0"/>
+    <mass value="0.9044569225918019"/>
+    <inertia ixx="0.001809" iyy="0.003379" izz="0.001811" ixy="-0.0" iyz="0.0" ixz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.37648 0.185 -0.07125" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_flat_f_14.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.37648 0.185 -0.07125" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_flat_f_14.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="gear_flat_f_20">
+  <inertial>
+    <origin xyz="-1.946496236748807e-06 0.01999999999999999 -1.711491169778534e-05" rpy="0 0 0"/>
+    <mass value="0.9044569225918019"/>
+    <inertia ixx="0.001809" iyy="0.003379" izz="0.001811" ixy="-0.0" iyz="-0.0" ixz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.37648 0.185 -0.1425" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_flat_f_20.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.37648 0.185 -0.1425" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_flat_f_20.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="gear_flat_f_21">
+  <inertial>
+    <origin xyz="-1.946496236804318e-06 0.01999999999999999 -1.7114911697896362e-05" rpy="0 0 0"/>
+    <mass value="0.9044569225918019"/>
+    <inertia ixx="0.001809" iyy="0.003379" izz="0.001811" ixy="-0.0" iyz="-0.0" ixz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.37648 0.185 -0.21375" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_flat_f_21.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.37648 0.185 -0.21375" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_flat_f_21.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="gear_flat_f_12">
+  <inertial>
+    <origin xyz="-1.946496236748807e-06 0.01999999999999999 -1.7114911697924118e-05" rpy="0 0 0"/>
+    <mass value="0.9044569225918019"/>
+    <inertia ixx="0.001809" iyy="0.003379" izz="0.001811" ixy="-0.0" iyz="0.0" ixz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.37648 0.185 -0.285" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_flat_f_12.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.37648 0.185 -0.285" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_flat_f_12.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="gear_totu_f_8">
+  <inertial>
+    <origin xyz="4.795529688178865e-06 0.019999999999999934 -1.6544242073895932e-05" rpy="0 0 0"/>
+    <mass value="0.9044569225897634"/>
+    <inertia ixx="0.001808" iyy="0.003379" izz="0.001812" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0 0.185 -0.035625" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_totu_f_8.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0 0.185 -0.035625" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_totu_f_8.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="gear_totu_f_7">
+  <inertial>
+    <origin xyz="4.795529688214392e-06 0.019999999999999934 -1.6544242073895932e-05" rpy="0 0 0"/>
+    <mass value="0.9044569225897634"/>
+    <inertia ixx="0.001808" iyy="0.003379" izz="0.001812" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0 0.185 -0.106875" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_totu_f_7.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0 0.185 -0.106875" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_totu_f_7.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="gear_totu_f_1">
+  <inertial>
+    <origin xyz="4.795529688162281e-06 0.019999999999999934 -1.6544242073923687e-05" rpy="0 0 0"/>
+    <mass value="0.9044569225897634"/>
+    <inertia ixx="0.001808" iyy="0.003379" izz="0.001812" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0 0.185 -0.178125" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_totu_f_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0 0.185 -0.178125" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_totu_f_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="gear_totu_f_2">
+  <inertial>
+    <origin xyz="4.795529688223273e-06 0.02000000000000013 -1.6544242073923687e-05" rpy="0 0 0"/>
+    <mass value="0.9044569225897634"/>
+    <inertia ixx="0.001808" iyy="0.003379" izz="0.001812" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 0.185 -0.249375" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_totu_f_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 0.185 -0.249375" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_totu_f_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="gear_totu_f_6">
+  <inertial>
+    <origin xyz="4.795529688184086e-06 0.019999999999999934 -1.654424207391675e-05" rpy="0 0 0"/>
+    <mass value="0.9044569225897634"/>
+    <inertia ixx="0.001808" iyy="0.003379" izz="0.001812" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.37648 0.185 -0.035625" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_totu_f_6.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.37648 0.185 -0.035625" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_totu_f_6.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="gear_totu_f_5">
+  <inertial>
+    <origin xyz="4.795529688295108e-06 0.019999999999999934 -1.6544242073951443e-05" rpy="0 0 0"/>
+    <mass value="0.9044569225897634"/>
+    <inertia ixx="0.001808" iyy="0.003379" izz="0.001812" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.37648 0.185 -0.106875" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_totu_f_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.37648 0.185 -0.106875" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_totu_f_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="gear_totu_f_4">
+  <inertial>
+    <origin xyz="4.795529688239597e-06 0.019999999999999934 -1.65442420739792e-05" rpy="0 0 0"/>
+    <mass value="0.9044569225897634"/>
+    <inertia ixx="0.001808" iyy="0.003379" izz="0.001812" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.37648 0.185 -0.178125" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_totu_f_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.37648 0.185 -0.178125" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_totu_f_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="gear_totu_f_3">
+  <inertial>
+    <origin xyz="4.795529688239597e-06 0.01999999999999999 -1.654424207403471e-05" rpy="0 0 0"/>
+    <mass value="0.9044569225897634"/>
+    <inertia ixx="0.001808" iyy="0.003379" izz="0.001812" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.37648 0.185 -0.249375" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_totu_f_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.37648 0.185 -0.249375" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://easy_j1_description/meshes/gear_totu_f_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="1" type="continuous">
+  <origin xyz="0.0 -0.125 0.0" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="gear_ou_1"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="2" type="continuous">
+  <origin xyz="0.075296 -0.125 0.0" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="gear_ou_2"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="3" type="continuous">
+  <origin xyz="0.150592 -0.125 0.0" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="gear_ou_3"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="4" type="continuous">
+  <origin xyz="0.225888 -0.125 0.0" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="gear_ou_5"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="5" type="continuous">
+  <origin xyz="0.301184 -0.125 0.0" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="gear_ou_4"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="6" type="continuous">
+  <origin xyz="0.37648 -0.125 0.0" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="gear_ou_6"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="7" type="continuous">
+  <origin xyz="0.037648 -0.125 0.0" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="gear_totu_1"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="8" type="continuous">
+  <origin xyz="0.112944 -0.125 0.0" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="gear_totu_2"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="9" type="continuous">
+  <origin xyz="0.18824 -0.125 0.0" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="gear_totu_4"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="10" type="continuous">
+  <origin xyz="0.263536 -0.125 0.0" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="gear_totu_5"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="11" type="continuous">
+  <origin xyz="0.338832 -0.125 0.0" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="gear_totu_3"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="12" type="continuous">
+  <origin xyz="0.0 0.125 0.0" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="cgear_ou_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="13" type="continuous">
+  <origin xyz="0.075296 0.125 0.0" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="cgear_ou_2"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="14" type="continuous">
+  <origin xyz="0.37648 0.125 0.0" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="cgear_ou_3"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="15" type="continuous">
+  <origin xyz="0.301184 0.125 0.0" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="cgear_ou_4"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="16" type="continuous">
+  <origin xyz="0.225888 0.125 0.0" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="cgear_ou_5"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="17" type="continuous">
+  <origin xyz="0.150592 0.125 0.0" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="cgear_ou_6"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="18" type="continuous">
+  <origin xyz="0.037648 0.125 0.0" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="cgear_totu_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="19" type="continuous">
+  <origin xyz="0.112944 0.125 0.0" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="cgear_totu_2"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="20" type="continuous">
+  <origin xyz="0.18824 0.125 0.0" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="cgear_totu_3"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="21" type="continuous">
+  <origin xyz="0.263536 0.125 0.0" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="cgear_totu_4"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="22" type="continuous">
+  <origin xyz="0.338832 0.125 0.0" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="cgear_totu_5"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="23" type="continuous">
+  <origin xyz="0.37648 -0.125 0.0" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="rl_2"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="24" type="continuous">
+  <origin xyz="0.0 -0.125 0.0" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="rl_1"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="25" type="continuous">
+  <origin xyz="0.0 0.125 0.0" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="rl_4"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="26" type="continuous">
+  <origin xyz="0.37648 0.125 0.0" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="rl_3"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="27" type="continuous">
+  <origin xyz="0.0 0.06 -0.0" rpy="0 0 0"/>
+  <parent link="rl_4"/>
+  <child link="gear_flat_f_1"/>
+  <axis xyz="0.0 1.0 -0.0"/>
+</joint>
+
+<joint name="28" type="continuous">
+  <origin xyz="0.0 0.06 0.07125" rpy="0 0 0"/>
+  <parent link="rl_4"/>
+  <child link="gear_flat_f_2"/>
+  <axis xyz="0.0 1.0 -0.0"/>
+</joint>
+
+<joint name="29" type="continuous">
+  <origin xyz="0.0 0.06 0.1425" rpy="0 0 0"/>
+  <parent link="rl_4"/>
+  <child link="gear_flat_f_3"/>
+  <axis xyz="0.0 1.0 -0.0"/>
+</joint>
+
+<joint name="30" type="continuous">
+  <origin xyz="0.0 0.06 0.21375" rpy="0 0 0"/>
+  <parent link="rl_4"/>
+  <child link="gear_flat_f_6"/>
+  <axis xyz="0.0 1.0 -0.0"/>
+</joint>
+
+<joint name="31" type="continuous">
+  <origin xyz="0.0 0.06 0.285" rpy="0 0 0"/>
+  <parent link="rl_4"/>
+  <child link="gear_flat_f_7"/>
+  <axis xyz="0.0 1.0 -0.0"/>
+</joint>
+
+<joint name="32" type="continuous">
+  <origin xyz="0.0 0.06 0.0" rpy="0 0 0"/>
+  <parent link="rl_3"/>
+  <child link="gear_flat_f_11"/>
+  <axis xyz="0.0 1.0 -0.0"/>
+</joint>
+
+<joint name="33" type="continuous">
+  <origin xyz="0.0 0.06 0.07125" rpy="0 0 0"/>
+  <parent link="rl_3"/>
+  <child link="gear_flat_f_10"/>
+  <axis xyz="0.0 1.0 -0.0"/>
+</joint>
+
+<joint name="34" type="continuous">
+  <origin xyz="0.0 0.06 0.1425" rpy="0 0 0"/>
+  <parent link="rl_3"/>
+  <child link="gear_flat_f_9"/>
+  <axis xyz="0.0 1.0 -0.0"/>
+</joint>
+
+<joint name="35" type="continuous">
+  <origin xyz="0.0 0.06 0.21375" rpy="0 0 0"/>
+  <parent link="rl_3"/>
+  <child link="gear_flat_f_8"/>
+  <axis xyz="0.0 1.0 -0.0"/>
+</joint>
+
+<joint name="36" type="continuous">
+  <origin xyz="0.0 0.06 0.285" rpy="0 0 0"/>
+  <parent link="rl_3"/>
+  <child link="gear_flat_f_5"/>
+  <axis xyz="0.0 1.0 -0.0"/>
+</joint>
+
+<joint name="37" type="continuous">
+  <origin xyz="0.0 -0.06 0.0" rpy="0 0 0"/>
+  <parent link="rl_1"/>
+  <child link="gear_flat_f_19"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="38" type="continuous">
+  <origin xyz="-0.0 -0.06 0.07125" rpy="0 0 0"/>
+  <parent link="rl_1"/>
+  <child link="gear_flat_f_18"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="39" type="continuous">
+  <origin xyz="-0.0 -0.06 0.1425" rpy="0 0 0"/>
+  <parent link="rl_1"/>
+  <child link="gear_flat_f_17"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="40" type="continuous">
+  <origin xyz="-0.0 -0.06 0.21375" rpy="0 0 0"/>
+  <parent link="rl_1"/>
+  <child link="gear_flat_f_16"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="41" type="continuous">
+  <origin xyz="0.0 -0.06 0.285" rpy="0 0 0"/>
+  <parent link="rl_1"/>
+  <child link="gear_flat_f_15"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="42" type="continuous">
+  <origin xyz="0.0 -0.06 0.0" rpy="0 0 0"/>
+  <parent link="rl_2"/>
+  <child link="gear_flat_f_13"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="43" type="continuous">
+  <origin xyz="0.0 -0.06 0.07125" rpy="0 0 0"/>
+  <parent link="rl_2"/>
+  <child link="gear_flat_f_14"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="44" type="continuous">
+  <origin xyz="0.0 -0.06 0.1425" rpy="0 0 0"/>
+  <parent link="rl_2"/>
+  <child link="gear_flat_f_20"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="45" type="continuous">
+  <origin xyz="0.0 -0.06 0.21375" rpy="0 0 0"/>
+  <parent link="rl_2"/>
+  <child link="gear_flat_f_21"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="46" type="continuous">
+  <origin xyz="0.0 -0.06 0.285" rpy="0 0 0"/>
+  <parent link="rl_2"/>
+  <child link="gear_flat_f_12"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="47" type="continuous">
+  <origin xyz="-0.0 -0.06 0.035625" rpy="0 0 0"/>
+  <parent link="rl_1"/>
+  <child link="gear_totu_f_8"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="48" type="continuous">
+  <origin xyz="-0.0 -0.06 0.106875" rpy="0 0 0"/>
+  <parent link="rl_1"/>
+  <child link="gear_totu_f_7"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="49" type="continuous">
+  <origin xyz="-0.0 -0.06 0.178125" rpy="0 0 0"/>
+  <parent link="rl_1"/>
+  <child link="gear_totu_f_1"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="50" type="continuous">
+  <origin xyz="0.0 -0.06 0.249375" rpy="0 0 0"/>
+  <parent link="rl_1"/>
+  <child link="gear_totu_f_2"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="51" type="continuous">
+  <origin xyz="0.0 -0.06 0.035625" rpy="0 0 0"/>
+  <parent link="rl_2"/>
+  <child link="gear_totu_f_6"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="52" type="continuous">
+  <origin xyz="0.0 -0.06 0.106875" rpy="0 0 0"/>
+  <parent link="rl_2"/>
+  <child link="gear_totu_f_5"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="53" type="continuous">
+  <origin xyz="0.0 -0.06 0.178125" rpy="0 0 0"/>
+  <parent link="rl_2"/>
+  <child link="gear_totu_f_4"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="54" type="continuous">
+  <origin xyz="0.0 -0.06 0.249375" rpy="0 0 0"/>
+  <parent link="rl_2"/>
+  <child link="gear_totu_f_3"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+</joint>
+
+</robot>
